@@ -46,7 +46,7 @@
         <scene sceneID="XVT-i7-fWW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Oa-MB-pNv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Restaurantes" id="uec-yb-QGe"/>
+                    <tabBarItem key="tabBarItem" title="Restaurantes" image="restaurant" id="uec-yb-QGe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yOz-zt-O3x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -84,7 +84,7 @@
                             <outlet property="delegate" destination="qdn-Dg-LcK" id="Dpv-mQ-udH"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Meus Pedidos" id="3YC-Xt-g2e"/>
+                    <tabBarItem key="tabBarItem" title="Meus Pedidos" image="purchase_order" id="3YC-Xt-g2e"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6N-hX-sxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -157,7 +157,7 @@
             </objects>
             <point key="canvasLocation" x="2558" y="-146"/>
         </scene>
-        <!--...-->
+        <!--View Controller-->
         <scene sceneID="KSZ-v9-nEt">
             <objects>
                 <viewController id="CUW-wB-4Np" sceneMemberID="viewController">
@@ -170,11 +170,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="..." id="QxU-Qf-16M"/>
+                    <tabBarItem key="tabBarItem" title="" image="more" id="QxU-Qf-16M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvt-Sb-4kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="490" y="1261"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="more" width="24" height="24"/>
+        <image name="purchase_order" width="24" height="24"/>
+        <image name="restaurant" width="24" height="24"/>
+    </resources>
 </document>
