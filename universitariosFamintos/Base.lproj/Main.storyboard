@@ -46,7 +46,7 @@
         <scene sceneID="XVT-i7-fWW">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4Oa-MB-pNv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Restaurantes" id="uec-yb-QGe"/>
+                    <tabBarItem key="tabBarItem" title="Restaurantes" image="restaurant" id="uec-yb-QGe"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yOz-zt-O3x">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -177,4 +177,7 @@
             <point key="canvasLocation" x="490" y="1261"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="restaurant" width="24" height="24"/>
+    </resources>
 </document>
