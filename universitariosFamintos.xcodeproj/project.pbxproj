@@ -37,6 +37,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3FA165AD1D2196650016EC67 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3FB36E581D1DCAB200119DDA /* Main.storyboard */,
+				3FB36E601D1DCAB200119DDA /* LaunchScreen.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		3FA165AE1D2196840016EC67 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3FB36E561D1DCAB200119DDA /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		3FA165AF1D2196FE0016EC67 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
 		3FB36E481D1DCAB200119DDA = {
 			isa = PBXGroup;
 			children = (
@@ -56,11 +80,11 @@
 		3FB36E531D1DCAB200119DDA /* universitariosFamintos */ = {
 			isa = PBXGroup;
 			children = (
-				3FB36E541D1DCAB200119DDA /* AppDelegate.swift */,
-				3FB36E561D1DCAB200119DDA /* ViewController.swift */,
-				3FB36E581D1DCAB200119DDA /* Main.storyboard */,
+				3FA165AF1D2196FE0016EC67 /* CoreData */,
+				3FA165AE1D2196840016EC67 /* Controller */,
+				3FA165AD1D2196650016EC67 /* View */,
 				3FB36E5E1D1DCAB200119DDA /* Assets.xcassets */,
-				3FB36E601D1DCAB200119DDA /* LaunchScreen.storyboard */,
+				3FB36E541D1DCAB200119DDA /* AppDelegate.swift */,
 				3FB36E631D1DCAB200119DDA /* Info.plist */,
 				3FB36E5B1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld */,
 			);
@@ -292,6 +316,7 @@
 				3FB36E681D1DCAB200119DDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
