@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T4Y-tz-LTt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5uf-Jz-BK1">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -162,14 +162,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8yf-9c-CuD">
-                                <rect key="frame" x="-20" y="54" width="440" height="566"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8yf-9c-CuD">
+                                <rect key="frame" x="-20" y="54" width="599" height="469"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="nka-az-ZJH">
-                                        <rect key="frame" x="40" y="20" width="360" height="49"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="nka-az-ZJH">
+                                        <rect key="frame" x="0.0" y="0.0" width="199" height="469"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ygP-4L-7w0">
-                                                <rect key="frame" x="20" y="20" width="50" height="49"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygP-4L-7w0">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="469"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="37W-DO-ykY"/>
                                                     <constraint firstAttribute="width" constant="50" id="ca4-6G-Bjz"/>
@@ -180,15 +180,16 @@
                                                         <exclude reference="ca4-6G-Bjz"/>
                                                     </mask>
                                                 </variation>
-                                                <variation key="widthClass=compact">
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="49"/>
                                                     <mask key="constraints">
                                                         <include reference="37W-DO-ykY"/>
                                                         <include reference="ca4-6G-Bjz"/>
                                                     </mask>
                                                 </variation>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome restaurante" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4K3-Dh-hYE">
-                                                <rect key="frame" x="112" y="32" width="138" height="21"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nome restaurante" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4K3-Dh-hYE">
+                                                <rect key="frame" x="61" y="0.0" width="138" height="469"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -201,8 +202,8 @@
                                             <rect key="frame" x="101" y="0.0" width="199" height="49"/>
                                         </variation>
                                     </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DHN-MX-am3">
-                                        <rect key="frame" x="20" y="77" width="400" height="469"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DHN-MX-am3">
+                                        <rect key="frame" x="199" y="0.0" width="400" height="469"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="500" id="OKR-nt-VwN"/>
@@ -210,19 +211,20 @@
                                         </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="yWE-cR-yo1">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                                <rect key="frame" x="0.0" y="28" width="400" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yWE-cR-yo1" id="wdL-Xc-fQO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="49.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2tj-44-GLi">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2tj-44-GLi">
                                                             <rect key="frame" x="-20" y="-7" width="423" height="90"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aza-Gc-Z02">
-                                                                    <rect key="frame" x="-20" y="-20" width="226" height="61"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aza-Gc-Z02">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="95" height="41"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome prato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMi-pw-WQM">
-                                                                            <rect key="frame" x="20" y="20" width="91" height="21"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nome prato" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMi-pw-WQM">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="95" height="21"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -230,8 +232,8 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="0.0" height="21"/>
                                                                             </variation>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="informacoes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcQ-kn-UJU">
-                                                                            <rect key="frame" x="111" y="20" width="95" height="21"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="informacoes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcQ-kn-UJU">
+                                                                            <rect key="frame" x="0.0" y="21" width="95" height="21"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -255,11 +257,11 @@
                                                                         </mask>
                                                                     </variation>
                                                                 </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u0a-Eg-QgB">
-                                                                    <rect key="frame" x="166" y="-20" width="120" height="61"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="u0a-Eg-QgB">
+                                                                    <rect key="frame" x="95" y="0.0" width="44" height="41"/>
                                                                     <subviews>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="qtde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="359-V2-at6">
-                                                                            <rect key="frame" x="64" y="20" width="36" height="21"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="qtde" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="359-V2-at6">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="44" height="21"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -267,8 +269,8 @@
                                                                                 <rect key="frame" x="0.0" y="0.0" width="34" height="21"/>
                                                                             </variation>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="preco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilg-Ch-tI3">
-                                                                            <rect key="frame" x="20" y="20" width="44" height="21"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="preco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilg-Ch-tI3">
+                                                                            <rect key="frame" x="0.0" y="21" width="44" height="21"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
@@ -337,8 +339,7 @@
                                         <exclude reference="Z6e-NQ-iNn"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="74" width="400" height="482"/>
+                                <variation key="widthClass=compact" alignment="center" axis="vertical">
                                     <mask key="constraints">
                                         <exclude reference="R8J-an-pzN"/>
                                         <exclude reference="jFY-fZ-95M"/>
