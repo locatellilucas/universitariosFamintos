@@ -8,7 +8,22 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController:
+
+UIViewController {
+    
+    @IBOutlet weak var labelTeste: UILabel!
+    
+    @IBAction func melhorBotao(sender: AnyObject) {
+        
+        labelTeste.alpha = 1
+        
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        labelTeste.alpha = 0.0
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
