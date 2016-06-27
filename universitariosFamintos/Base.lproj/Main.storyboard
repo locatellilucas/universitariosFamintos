@@ -19,9 +19,9 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Okx-Fm-gab">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="Add ao carrinho"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="263" y="501" width="46" height="30"/>
+                                    <rect key="frame" x="232" y="501" width="109" height="30"/>
                                 </variation>
                                 <connections>
                                     <segue destination="T4Y-tz-LTt" kind="show" id="4hq-MB-Mos"/>
@@ -54,6 +54,7 @@
                         <viewControllerLayoutGuide type="bottom" id="k3N-I1-2DB"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jqG-uf-Urv">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
