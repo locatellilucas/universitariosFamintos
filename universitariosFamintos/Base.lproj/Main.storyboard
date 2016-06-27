@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T4Y-tz-LTt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5uf-Jz-BK1">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -153,7 +153,7 @@
         <!--Carrinho-->
         <scene sceneID="1ze-85-EHs">
             <objects>
-                <viewController id="T4Y-tz-LTt" userLabel="Carrinho" sceneMemberID="viewController">
+                <viewController id="T4Y-tz-LTt" userLabel="Carrinho" customClass="CarrinhoViewController" customModule="universitariosFamintos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="NW0-b3-Ogz"/>
                         <viewControllerLayoutGuide type="bottom" id="k3N-I1-2DB"/>
@@ -163,13 +163,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="8yf-9c-CuD">
-                                <rect key="frame" x="-20" y="54" width="599" height="469"/>
+                                <rect key="frame" x="-20" y="54" width="585" height="469"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="nka-az-ZJH">
-                                        <rect key="frame" x="0.0" y="0.0" width="199" height="469"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="469"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="ygP-4L-7w0">
-                                                <rect key="frame" x="0.0" y="0.0" width="50" height="469"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="16" height="469"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="37W-DO-ykY"/>
                                                     <constraint firstAttribute="width" constant="50" id="ca4-6G-Bjz"/>
@@ -188,7 +188,7 @@
                                                 </variation>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Nome restaurante" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4K3-Dh-hYE">
-                                                <rect key="frame" x="61" y="0.0" width="138" height="469"/>
+                                                <rect key="frame" x="27" y="0.0" width="138" height="469"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                 <nil key="highlightedColor"/>
@@ -196,21 +196,21 @@
                                         </subviews>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DHN-MX-am3">
-                                        <rect key="frame" x="199" y="0.0" width="400" height="469"/>
+                                        <rect key="frame" x="185" y="0.0" width="400" height="469"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="500" id="OKR-nt-VwN"/>
                                             <constraint firstAttribute="height" constant="500" id="zNR-Dj-2qv"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="yWE-cR-yo1">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="yWE-cR-yo1" customClass="ItensCartViewCell" customModule="universitariosFamintos" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="400" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yWE-cR-yo1" id="wdL-Xc-fQO">
                                                     <rect key="frame" x="0.0" y="0.0" width="400" height="49.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2tj-44-GLi">
+                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="2tj-44-GLi">
                                                             <rect key="frame" x="-20" y="-7" width="423" height="90"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aza-Gc-Z02">
@@ -222,7 +222,7 @@
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                             <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="340" height="21"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="263" height="21"/>
                                                                             </variation>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="informacoes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcQ-kn-UJU">
@@ -231,7 +231,7 @@
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                             <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="21" width="340" height="21"/>
+                                                                                <rect key="frame" x="0.0" y="21" width="263" height="21"/>
                                                                             </variation>
                                                                         </label>
                                                                     </subviews>
@@ -244,7 +244,7 @@
                                                                         </mask>
                                                                     </variation>
                                                                     <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="340" height="41"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="263" height="41"/>
                                                                         <mask key="constraints">
                                                                             <include reference="i8i-Xv-fMC"/>
                                                                         </mask>
@@ -259,7 +259,7 @@
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                             <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="44" height="21"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="122" height="21"/>
                                                                             </variation>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="preco" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilg-Ch-tI3">
@@ -268,12 +268,12 @@
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                             <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="21" width="44" height="21"/>
+                                                                                <rect key="frame" x="0.0" y="21" width="122" height="21"/>
                                                                             </variation>
                                                                         </label>
                                                                     </subviews>
                                                                     <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                        <rect key="frame" x="340" y="0.0" width="44" height="41"/>
+                                                                        <rect key="frame" x="263" y="0.0" width="122" height="41"/>
                                                                     </variation>
                                                                 </stackView>
                                                             </subviews>
@@ -299,6 +299,12 @@
                                                         </mask>
                                                     </variation>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="InfoPratoCarrinho" destination="TcQ-kn-UJU" id="wU3-BW-q4J"/>
+                                                    <outlet property="nomePratoCarrinho" destination="qMi-pw-WQM" id="Gl9-EQ-BXc"/>
+                                                    <outlet property="precoPratoCarrinho" destination="Ilg-Ch-tI3" id="iBy-cz-KVy"/>
+                                                    <outlet property="qtdePratoCarrinho" destination="359-V2-at6" id="IN0-sL-r8c"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                         <variation key="default">
@@ -307,8 +313,7 @@
                                                 <exclude reference="zNR-Dj-2qv"/>
                                             </mask>
                                         </variation>
-                                        <variation key="widthClass=compact" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="69" width="400" height="398"/>
+                                        <variation key="widthClass=compact">
                                             <mask key="constraints">
                                                 <exclude reference="OKR-nt-VwN"/>
                                                 <exclude reference="zNR-Dj-2qv"/>
@@ -324,18 +329,18 @@
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
-                                        <exclude reference="XEL-SF-veu"/>
-                                        <exclude reference="mw6-yh-HjY"/>
                                         <exclude reference="nq4-iF-SyL"/>
                                         <exclude reference="qqp-nn-LJa"/>
+                                        <exclude reference="XEL-SF-veu"/>
+                                        <exclude reference="mw6-yh-HjY"/>
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" alignment="center" axis="vertical">
                                     <mask key="constraints">
-                                        <include reference="XEL-SF-veu"/>
-                                        <include reference="mw6-yh-HjY"/>
                                         <include reference="nq4-iF-SyL"/>
                                         <include reference="qqp-nn-LJa"/>
+                                        <include reference="XEL-SF-veu"/>
+                                        <include reference="mw6-yh-HjY"/>
                                     </mask>
                                 </variation>
                             </stackView>

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3F2EF05E1D21AF9D00D657DC /* ItensCartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2EF05D1D21AF9D00D657DC /* ItensCartViewCell.swift */; };
+		3F2EF0601D21B0BC00D657DC /* CarrinhoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2EF05F1D21B0BC00D657DC /* CarrinhoTableViewController.swift */; };
+		3F2EF0621D21B26F00D657DC /* CarrinhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2EF0611D21B26F00D657DC /* CarrinhoViewController.swift */; };
 		3FB36E551D1DCAB200119DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB36E541D1DCAB200119DDA /* AppDelegate.swift */; };
 		3FB36E571D1DCAB200119DDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB36E561D1DCAB200119DDA /* ViewController.swift */; };
 		3FB36E5A1D1DCAB200119DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB36E581D1DCAB200119DDA /* Main.storyboard */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F2EF05D1D21AF9D00D657DC /* ItensCartViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItensCartViewCell.swift; sourceTree = "<group>"; };
+		3F2EF05F1D21B0BC00D657DC /* CarrinhoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoTableViewController.swift; sourceTree = "<group>"; };
+		3F2EF0611D21B26F00D657DC /* CarrinhoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoViewController.swift; sourceTree = "<group>"; };
 		3FB36E511D1DCAB200119DDA /* universitariosFamintos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = universitariosFamintos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB36E541D1DCAB200119DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FB36E561D1DCAB200119DDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +55,10 @@
 		3FA165AE1D2196840016EC67 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3F2EF05D1D21AF9D00D657DC /* ItensCartViewCell.swift */,
 				3FB36E561D1DCAB200119DDA /* ViewController.swift */,
+				3F2EF0611D21B26F00D657DC /* CarrinhoViewController.swift */,
+				3F2EF05F1D21B0BC00D657DC /* CarrinhoTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -164,6 +173,9 @@
 			files = (
 				3FB36E571D1DCAB200119DDA /* ViewController.swift in Sources */,
 				3FB36E5D1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld in Sources */,
+				3F2EF05E1D21AF9D00D657DC /* ItensCartViewCell.swift in Sources */,
+				3F2EF0601D21B0BC00D657DC /* CarrinhoTableViewController.swift in Sources */,
+				3F2EF0621D21B26F00D657DC /* CarrinhoViewController.swift in Sources */,
 				3FB36E551D1DCAB200119DDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
