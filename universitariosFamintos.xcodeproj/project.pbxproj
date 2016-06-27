@@ -53,6 +53,7 @@
 		3FA165AE1D2196840016EC67 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3F2EF05D1D21AF9D00D657DC /* ItensCartViewCell.swift */,
 				3FB36E561D1DCAB200119DDA /* ViewController.swift */,
 				3FA165B31D219E780016EC67 /* PratosViewController.swift */,
 			);
@@ -180,6 +181,9 @@
 				3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */,
 				3FB36E571D1DCAB200119DDA /* ViewController.swift in Sources */,
 				3FB36E5D1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld in Sources */,
+				3F2EF05E1D21AF9D00D657DC /* ItensCartViewCell.swift in Sources */,
+				3F2EF0601D21B0BC00D657DC /* CarrinhoTableViewController.swift in Sources */,
+				3F2EF0621D21B26F00D657DC /* CarrinhoViewController.swift in Sources */,
 				3FB36E551D1DCAB200119DDA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
