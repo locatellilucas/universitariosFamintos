@@ -157,7 +157,7 @@
             </objects>
             <point key="canvasLocation" x="2558" y="-146"/>
         </scene>
-        <!--View Controller-->
+        <!--Mais-->
         <scene sceneID="KSZ-v9-nEt">
             <objects>
                 <viewController id="CUW-wB-4Np" sceneMemberID="viewController">
@@ -170,7 +170,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="more" id="QxU-Qf-16M"/>
+                    <tabBarItem key="tabBarItem" title="Mais" image="more" id="QxU-Qf-16M"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvt-Sb-4kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
