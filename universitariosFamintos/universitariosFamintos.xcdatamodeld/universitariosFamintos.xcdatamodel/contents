@@ -11,8 +11,8 @@
         <attribute name="preco" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="restaurante" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="ProdutosPedidos" representedClassName=".ProdutosPedidos" syncable="YES">
-        <attribute name="numPedido" optional="YES" attributeType="String" syncable="YES"/>
+    <entity name="ProdutosPedidos" syncable="YES">
+        <attribute name="numPedido" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
         <attribute name="produto" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Restaurantes" representedClassName=".Restaurantes" syncable="YES">
@@ -28,10 +28,10 @@
         <attribute name="senha" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Usuarios" positionX="-63" positionY="-18" width="128" height="90"/>
-        <element name="Restaurantes" positionX="-54" positionY="18" width="128" height="120"/>
-        <element name="Produtos" positionX="-36" positionY="27" width="128" height="120"/>
         <element name="Pedidos" positionX="-18" positionY="72" width="128" height="75"/>
+        <element name="Produtos" positionX="-36" positionY="27" width="128" height="120"/>
         <element name="ProdutosPedidos" positionX="0" positionY="81" width="128" height="75"/>
+        <element name="Restaurantes" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="Usuarios" positionX="-63" positionY="-18" width="128" height="90"/>
     </elements>
 </model>
