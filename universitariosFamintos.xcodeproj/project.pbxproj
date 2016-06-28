@@ -28,6 +28,7 @@
 		3FB36E5D1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB36E5B1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld */; };
 		3FB36E5F1D1DCAB200119DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB36E5E1D1DCAB200119DDA /* Assets.xcassets */; };
 		3FB36E621D1DCAB200119DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB36E601D1DCAB200119DDA /* LaunchScreen.storyboard */; };
+		3FBB47C11D230AF3005312BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB47C01D230AF3005312BA /* LoginViewController.swift */; };
 		3FF9BD0C1D22F2F600784E41 /* InformacaoPratosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		3FB36E5E1D1DCAB200119DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB36E611D1DCAB200119DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB36E631D1DCAB200119DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FBB47C01D230AF3005312BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformacaoPratosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 		3FA165AE1D2196840016EC67 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3FBB47C01D230AF3005312BA /* LoginViewController.swift */,
 				3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */,
 				3F0DA3CC1D22E5DD00CC3C5B /* CarrinhoViewController.swift */,
 				3FB36E561D1DCAB200119DDA /* ViewController.swift */,
@@ -242,6 +245,7 @@
 				3F0DA3E61D22F52300CC3C5B /* Produtos+CoreDataProperties.swift in Sources */,
 				3F77AA951D23060800C3CA28 /* ProdutosDAO.swift in Sources */,
 				3F0DA3E51D22F52300CC3C5B /* Restaurantes.swift in Sources */,
+				3FBB47C11D230AF3005312BA /* LoginViewController.swift in Sources */,
 				3F0DA3E31D22F52300CC3C5B /* ProdutosPedidos.swift in Sources */,
 				3F0DA3E11D22F52300CC3C5B /* Usuarios.swift in Sources */,
 				3FB36E571D1DCAB200119DDA /* ViewController.swift in Sources */,
