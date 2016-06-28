@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T4Y-tz-LTt">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -186,7 +186,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="50" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DHN-MX-am3">
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DHN-MX-am3">
                                         <rect key="frame" x="809" y="0.0" width="400" height="480"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -194,7 +194,7 @@
                                             <constraint firstAttribute="height" constant="500" id="zNR-Dj-2qv"/>
                                         </constraints>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartIdentifier" rowHeight="50" id="yWE-cR-yo1" customClass="ItensCartViewCell" customModule="universitariosFamintos" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartIdentifier" rowHeight="60" id="yWE-cR-yo1" customClass="ItensCartViewCell" customModule="universitariosFamintos" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="400" height="50"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yWE-cR-yo1" id="wdL-Xc-fQO">
@@ -212,8 +212,8 @@
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
-                                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="21"/>
+                                                                            <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                                <rect key="frame" x="0.0" y="0.0" width="182" height="21"/>
                                                                             </variation>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="informacoes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcQ-kn-UJU">
@@ -221,8 +221,8 @@
                                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                             <nil key="highlightedColor"/>
-                                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="21" width="179" height="21"/>
+                                                                            <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                                <rect key="frame" x="0.0" y="21" width="182" height="21"/>
                                                                             </variation>
                                                                         </label>
                                                                     </subviews>
@@ -235,9 +235,9 @@
                                                                         </mask>
                                                                     </variation>
                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="41"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="182" height="41"/>
                                                                         <mask key="constraints">
-                                                                            <include reference="i8i-Xv-fMC"/>
+                                                                            <exclude reference="i8i-Xv-fMC"/>
                                                                         </mask>
                                                                     </variation>
                                                                 </stackView>
@@ -253,90 +253,98 @@
                                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="83" height="21"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="21"/>
                                                                                     </variation>
                                                                                 </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="qtde" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="359-V2-at6">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="qtde" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="359-V2-at6">
                                                                                     <rect key="frame" x="0.0" y="21" width="43" height="21"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                                        <rect key="frame" x="83" y="0.0" width="83" height="21"/>
+                                                                                        <rect key="frame" x="82" y="0.0" width="81" height="21"/>
                                                                                     </variation>
                                                                                 </label>
                                                                             </subviews>
                                                                             <variation key="widthClass=compact" axis="horizontal" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="166" height="21"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="163" height="21"/>
                                                                             </variation>
                                                                         </stackView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="u0a-Eg-QgB">
                                                                             <rect key="frame" x="20" y="20" width="95" height="21"/>
                                                                             <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="R$" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dU1-50-nky">
-                                                                                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="83" height="21"/>
-                                                                                    </variation>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="preco" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilg-Ch-tI3">
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="preco" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ilg-Ch-tI3">
                                                                                     <rect key="frame" x="0.0" y="21" width="44" height="21"/>
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                                        <rect key="frame" x="83" y="0.0" width="83" height="21"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="21"/>
                                                                                     </variation>
                                                                                 </label>
                                                                             </subviews>
-                                                                            <variation key="default">
-                                                                                <mask key="subviews">
-                                                                                    <exclude reference="dU1-50-nky"/>
-                                                                                </mask>
-                                                                            </variation>
                                                                             <variation key="widthClass=compact" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="21" width="166" height="21"/>
-                                                                                <mask key="subviews">
-                                                                                    <include reference="dU1-50-nky"/>
-                                                                                </mask>
+                                                                                <rect key="frame" x="0.0" y="21" width="163" height="21"/>
                                                                             </variation>
                                                                         </stackView>
                                                                     </subviews>
+                                                                    <constraints>
+                                                                        <constraint firstItem="u0a-Eg-QgB" firstAttribute="top" secondItem="qly-bn-ttB" secondAttribute="bottom" id="5Uh-pN-lQs"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="u0a-Eg-QgB" secondAttribute="trailing" id="7qe-MB-Qhv"/>
+                                                                        <constraint firstAttribute="trailing" secondItem="qly-bn-ttB" secondAttribute="trailing" id="H3I-vg-W5o"/>
+                                                                        <constraint firstItem="u0a-Eg-QgB" firstAttribute="leading" secondItem="Vu1-YE-6gw" secondAttribute="leading" id="cZZ-uy-foB"/>
+                                                                        <constraint firstItem="qly-bn-ttB" firstAttribute="leading" secondItem="Vu1-YE-6gw" secondAttribute="leading" id="fOj-cs-Mz1"/>
+                                                                        <constraint firstItem="qly-bn-ttB" firstAttribute="top" secondItem="Vu1-YE-6gw" secondAttribute="top" id="kue-E5-6w9"/>
+                                                                    </constraints>
                                                                     <variation key="default">
                                                                         <mask key="subviews">
                                                                             <exclude reference="u0a-Eg-QgB"/>
                                                                         </mask>
+                                                                        <mask key="constraints">
+                                                                            <exclude reference="H3I-vg-W5o"/>
+                                                                            <exclude reference="fOj-cs-Mz1"/>
+                                                                            <exclude reference="kue-E5-6w9"/>
+                                                                            <exclude reference="5Uh-pN-lQs"/>
+                                                                            <exclude reference="7qe-MB-Qhv"/>
+                                                                            <exclude reference="cZZ-uy-foB"/>
+                                                                        </mask>
                                                                     </variation>
                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="179" y="0.0" width="166" height="41"/>
+                                                                        <rect key="frame" x="182" y="0.0" width="163" height="41"/>
                                                                         <mask key="subviews">
                                                                             <include reference="u0a-Eg-QgB"/>
+                                                                        </mask>
+                                                                        <mask key="constraints">
+                                                                            <include reference="H3I-vg-W5o"/>
+                                                                            <include reference="fOj-cs-Mz1"/>
+                                                                            <include reference="kue-E5-6w9"/>
+                                                                            <include reference="5Uh-pN-lQs"/>
+                                                                            <include reference="7qe-MB-Qhv"/>
+                                                                            <include reference="cZZ-uy-foB"/>
                                                                         </mask>
                                                                     </variation>
                                                                 </stackView>
                                                             </subviews>
-                                                            <variation key="widthClass=compact" alignment="top" misplaced="YES">
-                                                                <rect key="frame" x="28" y="8" width="344" height="41"/>
-                                                            </variation>
+                                                            <variation key="widthClass=compact" alignment="top"/>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="2tj-44-GLi" firstAttribute="top" secondItem="wdL-Xc-fQO" secondAttribute="topMargin" id="6vE-BR-Ujs"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="2tj-44-GLi" secondAttribute="bottom" id="Bj4-Li-jii"/>
                                                         <constraint firstAttribute="trailingMargin" secondItem="2tj-44-GLi" secondAttribute="trailing" constant="20" id="S8y-fa-8vV"/>
                                                         <constraint firstItem="2tj-44-GLi" firstAttribute="leading" secondItem="wdL-Xc-fQO" secondAttribute="leadingMargin" constant="20" id="XsQ-fc-PeT"/>
                                                     </constraints>
                                                     <variation key="default">
                                                         <mask key="constraints">
                                                             <exclude reference="6vE-BR-Ujs"/>
+                                                            <exclude reference="Bj4-Li-jii"/>
                                                             <exclude reference="S8y-fa-8vV"/>
                                                         </mask>
                                                     </variation>
                                                     <variation key="widthClass=compact">
                                                         <mask key="constraints">
                                                             <include reference="6vE-BR-Ujs"/>
+                                                            <include reference="Bj4-Li-jii"/>
                                                             <include reference="S8y-fa-8vV"/>
                                                             <include reference="XsQ-fc-PeT"/>
                                                         </mask>
@@ -365,9 +373,13 @@
                                     </tableView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="DHN-MX-am3" secondAttribute="bottom" constant="30" id="9rJ-8V-5yf"/>
+                                    <constraint firstAttribute="bottom" secondItem="DHN-MX-am3" secondAttribute="bottom" constant="30" id="9rJ-8V-5yf">
+                                        <variation key="widthClass=compact" constant="0.0"/>
+                                    </constraint>
                                     <constraint firstAttribute="trailing" secondItem="DHN-MX-am3" secondAttribute="trailing" id="XEL-SF-veu"/>
-                                    <constraint firstItem="DHN-MX-am3" firstAttribute="leading" secondItem="8yf-9c-CuD" secondAttribute="leading" constant="-20" id="mw6-yh-HjY"/>
+                                    <constraint firstItem="DHN-MX-am3" firstAttribute="leading" secondItem="8yf-9c-CuD" secondAttribute="leading" constant="-20" id="mw6-yh-HjY">
+                                        <variation key="widthClass=compact" constant="0.0"/>
+                                    </constraint>
                                     <constraint firstItem="nka-az-ZJH" firstAttribute="leading" secondItem="8yf-9c-CuD" secondAttribute="leading" constant="20" id="nq4-iF-SyL"/>
                                     <constraint firstAttribute="trailing" secondItem="nka-az-ZJH" secondAttribute="trailing" constant="20" id="qqp-nn-LJa"/>
                                 </constraints>
@@ -415,6 +427,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="tableViewCart" destination="DHN-MX-am3" id="CTz-v6-cmq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZF-nA-rCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
