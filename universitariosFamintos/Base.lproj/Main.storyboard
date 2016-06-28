@@ -143,8 +143,8 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
-                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="176" height="21"/>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="224" y="0.0" width="176" height="21"/>
                                                         </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnU-BN-UYb" userLabel="Quantidade + stapper">
@@ -194,13 +194,16 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="21"/>
+                                                                        </variation>
                                                                     </label>
                                                                 </subviews>
+                                                                <variation key="widthClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="115" y="0.0" width="61" height="21"/>
+                                                                </variation>
                                                             </stackView>
                                                         </subviews>
-                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="81" width="176" height="21"/>
-                                                        </variation>
                                                     </stackView>
                                                 </subviews>
                                                 <variation key="widthClass=compact" misplaced="YES">
@@ -213,12 +216,6 @@
                                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-mD-gau">
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                                         <state key="normal" title="Adicionar ao carrinho"/>
-                                                        <variation key="widthClass=compact" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
-                                                        </variation>
-                                                        <connections>
-                                                            <segue destination="T4Y-tz-LTt" kind="show" id="f7u-FT-Obd"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <variation key="widthClass=compact" misplaced="YES">
