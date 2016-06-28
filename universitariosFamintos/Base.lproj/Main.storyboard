@@ -110,7 +110,7 @@
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="widthClass=compact" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="21"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="21"/>
                                                         </variation>
                                                     </label>
                                                 </subviews>
@@ -119,7 +119,7 @@
                                                     <constraint firstAttribute="width" constant="60" id="eHH-jF-bil"/>
                                                 </constraints>
                                                 <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="116" y="0.0" width="61" height="21"/>
+                                                    <rect key="frame" x="116" y="0.0" width="60" height="21"/>
                                                 </variation>
                                             </stackView>
                                         </subviews>
@@ -165,12 +165,12 @@
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="widthClass=compact" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="92" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="93" height="20"/>
                                                         </variation>
                                                     </label>
                                                 </subviews>
                                                 <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="92" height="20"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="93" height="20"/>
                                                 </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cJk-no-wi3" userLabel="Preço total - valor">
@@ -182,12 +182,12 @@
                                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         <nil key="highlightedColor"/>
                                                         <variation key="widthClass=compact" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="20"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="60" height="20"/>
                                                         </variation>
                                                     </label>
                                                 </subviews>
                                                 <variation key="widthClass=compact" misplaced="YES">
-                                                    <rect key="frame" x="115" y="0.0" width="61" height="20"/>
+                                                    <rect key="frame" x="116" y="0.0" width="60" height="20"/>
                                                 </variation>
                                             </stackView>
                                         </subviews>
@@ -273,7 +273,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="nka-az-ZJH">
                                         <rect key="frame" x="0.0" y="0.0" width="789" height="480"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="ygP-4L-7w0">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="ygP-4L-7w0">
                                                 <rect key="frame" x="0.0" y="0.0" width="640" height="480"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="49" id="37W-DO-ykY"/>
