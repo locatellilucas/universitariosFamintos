@@ -927,7 +927,7 @@
         <!--Mais-->
         <scene sceneID="KSZ-v9-nEt">
             <objects>
-                <viewController id="CUW-wB-4Np" sceneMemberID="viewController">
+                <viewController id="CUW-wB-4Np" customClass="LoginViewController" customModule="universitariosFamintos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="FlS-NK-QFH"/>
                         <viewControllerLayoutGuide type="bottom" id="y1W-nu-JK4"/>
@@ -935,9 +935,115 @@
                     <view key="view" contentMode="scaleToFill" id="Ky4-2W-o8u">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Q1G-G8-XET">
+                                <rect key="frame" x="20" y="43" width="560" height="130"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uxE-q6-5yo">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="70"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zAT-Zx-6VN">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDf-ff-9yX">
+                                                <rect key="frame" x="0.0" y="40" width="60" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="BQe-pZ-XjF">
+                                        <rect key="frame" x="0.0" y="70" width="103" height="30"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fML-5G-bnd">
+                                                <rect key="frame" x="0.0" y="0.0" width="38" height="30"/>
+                                                <state key="normal" title="Login"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBy-Ex-iLc">
+                                                <rect key="frame" x="48" y="0.0" width="55" height="30"/>
+                                                <state key="normal" title="Sign Up"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-yS-pwM">
+                                        <rect key="frame" x="0.0" y="100" width="159" height="30"/>
+                                        <state key="normal" title="Entrar com o Facebook"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="0Ym-yS-pwM" firstAttribute="leading" secondItem="Q1G-G8-XET" secondAttribute="leading" id="dou-8c-eie"/>
+                                    <constraint firstAttribute="trailing" secondItem="BQe-pZ-XjF" secondAttribute="trailing" id="iXR-5W-t8I"/>
+                                    <constraint firstAttribute="trailing" secondItem="uxE-q6-5yo" secondAttribute="trailing" id="ks8-ez-dmD"/>
+                                    <constraint firstItem="uxE-q6-5yo" firstAttribute="leading" secondItem="Q1G-G8-XET" secondAttribute="leading" id="nxF-Js-8EQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="0Ym-yS-pwM" secondAttribute="trailing" id="yGd-5K-ye3"/>
+                                    <constraint firstItem="BQe-pZ-XjF" firstAttribute="leading" secondItem="Q1G-G8-XET" secondAttribute="leading" id="zO5-Jn-r8l"/>
+                                    <constraint firstItem="uxE-q6-5yo" firstAttribute="centerX" secondItem="Q1G-G8-XET" secondAttribute="centerX" id="zzr-wv-xgr"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ks8-ez-dmD"/>
+                                        <exclude reference="nxF-Js-8EQ"/>
+                                        <exclude reference="zzr-wv-xgr"/>
+                                        <exclude reference="iXR-5W-t8I"/>
+                                        <exclude reference="zO5-Jn-r8l"/>
+                                        <exclude reference="dou-8c-eie"/>
+                                        <exclude reference="yGd-5K-ye3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="ks8-ez-dmD"/>
+                                        <include reference="nxF-Js-8EQ"/>
+                                        <include reference="zzr-wv-xgr"/>
+                                        <include reference="iXR-5W-t8I"/>
+                                        <include reference="zO5-Jn-r8l"/>
+                                        <include reference="dou-8c-eie"/>
+                                        <include reference="yGd-5K-ye3"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V86-Uu-it1">
+                                <rect key="frame" x="184" y="494" width="232" height="30"/>
+                                <state key="normal" title="Tenho um estabelecimento"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="84" y="501" width="232" height="30"/>
+                                </variation>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="Q1G-G8-XET" secondAttribute="trailing" id="5tb-Ay-xha"/>
+                            <constraint firstItem="Q1G-G8-XET" firstAttribute="leading" secondItem="Ky4-2W-o8u" secondAttribute="leadingMargin" id="Hko-8k-n3r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="V86-Uu-it1" secondAttribute="trailing" constant="50" id="TCf-fZ-Vj1"/>
+                            <constraint firstItem="V86-Uu-it1" firstAttribute="leading" secondItem="Ky4-2W-o8u" secondAttribute="leadingMargin" constant="50" id="Urp-Xv-z1M"/>
+                            <constraint firstItem="y1W-nu-JK4" firstAttribute="top" secondItem="V86-Uu-it1" secondAttribute="bottom" constant="30" id="Y6f-o2-ley"/>
+                            <constraint firstItem="Q1G-G8-XET" firstAttribute="top" secondItem="FlS-NK-QFH" secondAttribute="bottom" constant="30" id="bMr-dL-SJE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TCf-fZ-Vj1"/>
+                                <exclude reference="Urp-Xv-z1M"/>
+                                <exclude reference="Y6f-o2-ley"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="TCf-fZ-Vj1"/>
+                                <include reference="Urp-Xv-z1M"/>
+                                <include reference="Y6f-o2-ley"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Mais" image="more" id="QxU-Qf-16M"/>
+                    <connections>
+                        <outlet property="facebookButton" destination="0Ym-yS-pwM" id="hpG-Bg-K3a"/>
+                        <outlet property="loginButton" destination="fML-5G-bnd" id="6Hy-Sy-AuB"/>
+                        <outlet property="signupButton" destination="MBy-Ex-iLc" id="B1n-FQ-zPy"/>
+                        <outlet property="stackViewLogin" destination="uxE-q6-5yo" id="m13-x1-TF0"/>
+                        <outlet property="tenhoUm" destination="V86-Uu-it1" id="4Aq-Hl-Vyf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvt-Sb-4kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
