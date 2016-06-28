@@ -12,8 +12,8 @@
         <attribute name="restaurante" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="ProdutosPedidos" representedClassName=".ProdutosPedidos" syncable="YES">
-        <attribute name="numPedido" optional="YES" syncable="YES"/>
-        <attribute name="produto" optional="YES" syncable="YES"/>
+        <attribute name="numPedido" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="produto" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <entity name="Restaurantes" representedClassName=".Restaurantes" syncable="YES">
         <attribute name="categoria" optional="YES" attributeType="String" syncable="YES"/>
