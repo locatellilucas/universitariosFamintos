@@ -19,6 +19,7 @@
 		3F0DA3E51D22F52300CC3C5B /* Restaurantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DA3DB1D22F52300CC3C5B /* Restaurantes.swift */; };
 		3F0DA3E61D22F52300CC3C5B /* Produtos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DA3DC1D22F52300CC3C5B /* Produtos+CoreDataProperties.swift */; };
 		3F0DA3E71D22F52300CC3C5B /* Produtos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DA3DD1D22F52300CC3C5B /* Produtos.swift */; };
+		3F77AA951D23060800C3CA28 /* ProdutosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77AA941D23060800C3CA28 /* ProdutosDAO.swift */; };
 		3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA165B01D219E400016EC67 /* PratosCell.swift */; };
 		3FA165B41D219E780016EC67 /* PratosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA165B31D219E780016EC67 /* PratosViewController.swift */; };
 		3FB36E551D1DCAB200119DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB36E541D1DCAB200119DDA /* AppDelegate.swift */; };
@@ -43,6 +44,7 @@
 		3F0DA3DB1D22F52300CC3C5B /* Restaurantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurantes.swift; path = ../Restaurantes.swift; sourceTree = "<group>"; };
 		3F0DA3DC1D22F52300CC3C5B /* Produtos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Produtos+CoreDataProperties.swift"; path = "../Produtos+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F0DA3DD1D22F52300CC3C5B /* Produtos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Produtos.swift; path = ../Produtos.swift; sourceTree = "<group>"; };
+		3F77AA941D23060800C3CA28 /* ProdutosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdutosDAO.swift; sourceTree = "<group>"; };
 		3FA165B01D219E400016EC67 /* PratosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PratosCell.swift; sourceTree = "<group>"; };
 		3FA165B31D219E780016EC67 /* PratosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PratosViewController.swift; sourceTree = "<group>"; };
 		3FB36E511D1DCAB200119DDA /* universitariosFamintos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = universitariosFamintos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +89,7 @@
 		3F0DA3D11D22F3EE00CC3C5B /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				3F77AA941D23060800C3CA28 /* ProdutosDAO.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */,
 				3F0DA3E41D22F52300CC3C5B /* Restaurantes+CoreDataProperties.swift in Sources */,
 				3F0DA3E61D22F52300CC3C5B /* Produtos+CoreDataProperties.swift in Sources */,
+				3F77AA951D23060800C3CA28 /* ProdutosDAO.swift in Sources */,
 				3F0DA3E51D22F52300CC3C5B /* Restaurantes.swift in Sources */,
 				3F0DA3E31D22F52300CC3C5B /* ProdutosPedidos.swift in Sources */,
 				3F0DA3E11D22F52300CC3C5B /* Usuarios.swift in Sources */,

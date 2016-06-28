@@ -1,14 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "30F06733F25421ADA37E204C288DC7D7C5768ACC",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "30F06733F25421ADA37E204C288DC7D7C5768ACC+++F770E12",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
-    "30F06733F25421ADA37E204C288DC7D7C5768ACC" : 0
+    "30F06733F25421ADA37E204C288DC7D7C5768ACC+++F770E12" : 0,
+    "30F06733F25421ADA37E204C288DC7D7C5768ACC+++9A03D2E" : 0,
+    "30F06733F25421ADA37E204C288DC7D7C5768ACC+++CB87C5B" : 0
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D95C5A49-4D1B-4CFC-92B3-BA7274C44507",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
-    "30F06733F25421ADA37E204C288DC7D7C5768ACC" : "..\/Users\/student\/Documents\/universitariosFamintos"
+    "30F06733F25421ADA37E204C288DC7D7C5768ACC+++F770E12" : "universitariosFamintos\/",
+    "30F06733F25421ADA37E204C288DC7D7C5768ACC+++9A03D2E" : "..\/Users\/student\/Documents\/universitariosFamintos",
+    "30F06733F25421ADA37E204C288DC7D7C5768ACC+++CB87C5B" : "..\/Users\/student\/Documents\/universitariosFamintos"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "universitariosFamintos",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -17,12 +21,17 @@
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/locatellilucas\/universitariosFamintos",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30F06733F25421ADA37E204C288DC7D7C5768ACC"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30F06733F25421ADA37E204C288DC7D7C5768ACC+++9A03D2E"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/locatellilucas\/universitariosFamintos.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
-      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30F06733F25421ADA37E204C288DC7D7C5768ACC"
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30F06733F25421ADA37E204C288DC7D7C5768ACC+++CB87C5B"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/locatellilucas\/universitariosFamintos",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "30F06733F25421ADA37E204C288DC7D7C5768ACC+++F770E12"
     }
   ]
 }
