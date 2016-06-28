@@ -39,12 +39,12 @@
                                                                     </navigationItem>
                                                                 </items>
                                                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="102"/>
                                                                 </variation>
                                                             </navigationBar>
                                                         </subviews>
                                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="44"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="102"/>
                                                         </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m3E-yM-CXa" userLabel="Imagem geral">
@@ -62,12 +62,12 @@
                                                             </imageView>
                                                         </subviews>
                                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="44" width="400" height="127"/>
+                                                            <rect key="frame" x="0.0" y="102" width="400" height="127"/>
                                                         </variation>
                                                     </stackView>
                                                 </subviews>
                                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="171"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="229"/>
                                                 </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EkJ-ZM-E4g" userLabel="Descrição + comentários">
@@ -102,17 +102,17 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                                 <variation key="widthClass=compact" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="88"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
                                                                 </variation>
                                                             </textField>
                                                         </subviews>
-                                                        <variation key="widthClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="80" width="400" height="88"/>
+                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="80" width="400" height="30"/>
                                                         </variation>
                                                     </stackView>
                                                 </subviews>
                                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="201" width="400" height="168"/>
+                                                    <rect key="frame" x="0.0" y="259" width="400" height="110"/>
                                                 </variation>
                                             </stackView>
                                         </subviews>
@@ -137,8 +137,14 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="116" height="21"/>
+                                                                        </variation>
                                                                     </label>
                                                                 </subviews>
+                                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="21"/>
+                                                                </variation>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pHT-37-xTd" userLabel="Preço unitário - valor">
                                                                 <rect key="frame" x="116" y="0.0" width="61" height="21"/>
@@ -148,8 +154,14 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="21"/>
+                                                                        </variation>
                                                                     </label>
                                                                 </subviews>
+                                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="116" y="0.0" width="61" height="21"/>
+                                                                </variation>
                                                             </stackView>
                                                         </subviews>
                                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
@@ -195,8 +207,14 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
+                                                                        <variation key="widthClass=compact" ambiguous="YES">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="92" height="21"/>
+                                                                        </variation>
                                                                     </label>
                                                                 </subviews>
+                                                                <variation key="widthClass=compact" ambiguous="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="92" height="21"/>
+                                                                </variation>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cJk-no-wi3" userLabel="Preço total - valor">
                                                                 <rect key="frame" x="115" y="0.0" width="61" height="21"/>
