@@ -8,40 +8,38 @@
 
 import UIKit
 
-class Teste{
-    var nome: String
-    var info: String
-    var qtde: String
-    var preco: String
-
-    init(nome: String, info: String, qtde: String, preco: String){
-        self.nome = nome
-        self.info = info
-        self.qtde = qtde
-        self.preco = preco
-        
-    }
-}
 
 class CarrinhoViewController: UIViewController, UITableViewDataSource{
     
     
     @IBOutlet weak var tableViewCart: UITableView!
     
-    var testes: [Teste] = [Teste]()
+
+    var listaProdutos = ProdutosDAO.buscarTodosProdutos()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableViewCart.dataSource = self
-        let teste1 = Teste(nome: "Pizza", info: "Frango com catupiry", qtde: "2", preco: "R$5,00")
+        let produto: Produtos = Produtos()
+        produto.nome = "Pizza"
+        produto.preco = "R$5,00"
+        produto.descricao = "Frango com catupiry"
+        produto.imagem = "nada"
+        produto.restaurante = "Pizzaria Augusta"
         
-        self.testes.append(teste1)
-        self.testes.append(teste1)
-        self.testes.append(teste1)
-        self.testes.append(teste1)
+        let produto2: Produtos = Produtos()
+        produto.nome = "Pizza"
+        produto.preco = "R$5,00"
+        produto.descricao = "Calabresa"
+        produto.imagem = "nada"
+        produto.restaurante = "Pizzaria Augusta"
+      
+        ProdutosDAO.inserir(produto)
+        ProdutosDAO.inserir(produto2)
         
-        // Do any additional setup after loading the view.
+        
+                     // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -58,7 +56,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.testes.count
+        return self.listaProdutos.count
     }
     
     
@@ -68,12 +66,12 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
         //indexPath.section
         //indexPath.row
         
-        let teste = self.testes[indexPath.row]
+        let produto = self.listaProdutos[indexPath.row]
         
-        cell.nomePratoCarrinho.text = teste.nome
-        cell.InfoPratoCarrinho.text = teste.info
-        cell.qtdePratoCarrinho.text = teste.qtde
-        cell.precoPratoCarrinho.text = teste.preco
+        cell.nomePratoCarrinho.text = produto.nome
+        cell.InfoPratoCarrinho.text = produto.descricao
+        cell.qtdePratoCarrinho.text = "2"
+        cell.precoPratoCarrinho.text = produto.preco
         
         return cell
     }
