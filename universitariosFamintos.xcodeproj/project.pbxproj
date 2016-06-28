@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3F2EF05E1D21AF9D00D657DC /* ItensCartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2EF05D1D21AF9D00D657DC /* ItensCartViewCell.swift */; };
-		3F2EF0601D21B0BC00D657DC /* CarrinhoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2EF05F1D21B0BC00D657DC /* CarrinhoTableViewController.swift */; };
-		3F2EF0621D21B26F00D657DC /* CarrinhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F2EF0611D21B26F00D657DC /* CarrinhoViewController.swift */; };
+		3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA165B01D219E400016EC67 /* PratosCell.swift */; };
+		3FA165B41D219E780016EC67 /* PratosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA165B31D219E780016EC67 /* PratosViewController.swift */; };
 		3FB36E551D1DCAB200119DDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB36E541D1DCAB200119DDA /* AppDelegate.swift */; };
 		3FB36E571D1DCAB200119DDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FB36E561D1DCAB200119DDA /* ViewController.swift */; };
 		3FB36E5A1D1DCAB200119DDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB36E581D1DCAB200119DDA /* Main.storyboard */; };
@@ -19,9 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3F2EF05D1D21AF9D00D657DC /* ItensCartViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItensCartViewCell.swift; sourceTree = "<group>"; };
-		3F2EF05F1D21B0BC00D657DC /* CarrinhoTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoTableViewController.swift; sourceTree = "<group>"; };
-		3F2EF0611D21B26F00D657DC /* CarrinhoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoViewController.swift; sourceTree = "<group>"; };
+		3FA165B01D219E400016EC67 /* PratosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PratosCell.swift; sourceTree = "<group>"; };
+		3FA165B31D219E780016EC67 /* PratosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PratosViewController.swift; sourceTree = "<group>"; };
 		3FB36E511D1DCAB200119DDA /* universitariosFamintos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = universitariosFamintos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FB36E541D1DCAB200119DDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3FB36E561D1DCAB200119DDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,8 +55,7 @@
 			children = (
 				3F2EF05D1D21AF9D00D657DC /* ItensCartViewCell.swift */,
 				3FB36E561D1DCAB200119DDA /* ViewController.swift */,
-				3F2EF0611D21B26F00D657DC /* CarrinhoViewController.swift */,
-				3F2EF05F1D21B0BC00D657DC /* CarrinhoTableViewController.swift */,
+				3FA165B31D219E780016EC67 /* PratosViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -68,6 +65,14 @@
 			children = (
 			);
 			name = CoreData;
+			sourceTree = "<group>";
+		};
+		3FA165B21D219E4C0016EC67 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3FA165B01D219E400016EC67 /* PratosCell.swift */,
+			);
+			name = Cell;
 			sourceTree = "<group>";
 		};
 		3FB36E481D1DCAB200119DDA = {
@@ -94,6 +99,7 @@
 				3FA165AD1D2196650016EC67 /* View */,
 				3FB36E5E1D1DCAB200119DDA /* Assets.xcassets */,
 				3FB36E541D1DCAB200119DDA /* AppDelegate.swift */,
+				3FA165B21D219E4C0016EC67 /* Cell */,
 				3FB36E631D1DCAB200119DDA /* Info.plist */,
 				3FB36E5B1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld */,
 			);
@@ -171,6 +177,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FA165B41D219E780016EC67 /* PratosViewController.swift in Sources */,
+				3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */,
 				3FB36E571D1DCAB200119DDA /* ViewController.swift in Sources */,
 				3FB36E5D1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld in Sources */,
 				3F2EF05E1D21AF9D00D657DC /* ItensCartViewCell.swift in Sources */,
