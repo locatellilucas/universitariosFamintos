@@ -28,6 +28,7 @@
 		3FB36E5D1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB36E5B1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld */; };
 		3FB36E5F1D1DCAB200119DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB36E5E1D1DCAB200119DDA /* Assets.xcassets */; };
 		3FB36E621D1DCAB200119DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB36E601D1DCAB200119DDA /* LaunchScreen.storyboard */; };
+		3FF9BD0C1D22F2F600784E41 /* InformacaoPratosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		3FB36E5E1D1DCAB200119DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB36E611D1DCAB200119DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB36E631D1DCAB200119DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformacaoPratosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		3FA165AE1D2196840016EC67 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */,
 				3F0DA3CC1D22E5DD00CC3C5B /* CarrinhoViewController.swift */,
 				3FB36E561D1DCAB200119DDA /* ViewController.swift */,
 				3FA165B31D219E780016EC67 /* PratosViewController.swift */,
@@ -245,6 +248,7 @@
 				3F0DA3DE1D22F52300CC3C5B /* Pedidos+CoreDataProperties.swift in Sources */,
 				3FB36E5D1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld in Sources */,
 				3F0DA3CE1D22E5DD00CC3C5B /* CarrinhoViewController.swift in Sources */,
+				3FF9BD0C1D22F2F600784E41 /* InformacaoPratosViewController.swift in Sources */,
 				3FB36E551D1DCAB200119DDA /* AppDelegate.swift in Sources */,
 				3F0DA3E01D22F52300CC3C5B /* Usuarios+CoreDataProperties.swift in Sources */,
 				3F0DA3DF1D22F52300CC3C5B /* Pedidos.swift in Sources */,
