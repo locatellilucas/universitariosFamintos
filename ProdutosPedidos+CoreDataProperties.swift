@@ -14,7 +14,7 @@ import CoreData
 
 extension ProdutosPedidos {
 
-    @NSManaged var numPedido: UNKNOWN_TYPE
-    @NSManaged var produto: UNKNOWN_TYPE
+    @NSManaged var numPedido: String?
+    @NSManaged var produto: String?
 
 }
