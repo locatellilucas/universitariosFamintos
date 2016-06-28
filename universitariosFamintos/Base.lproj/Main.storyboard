@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T4Y-tz-LTt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -38,8 +38,14 @@
                                                                         <barButtonItem key="backBarButtonItem" title="Voltar" id="O3N-Vb-RQT"/>
                                                                     </navigationItem>
                                                                 </items>
+                                                                <variation key="widthClass=compact" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="45"/>
+                                                                </variation>
                                                             </navigationBar>
                                                         </subviews>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="50" height="45"/>
+                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m3E-yM-CXa" userLabel="Imagem geral">
                                                         <rect key="frame" x="0.0" y="52" width="590" height="127"/>
@@ -52,8 +58,14 @@
                                                                 </constraints>
                                                             </imageView>
                                                         </subviews>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="45" width="400" height="127"/>
+                                                        </variation>
                                                     </stackView>
                                                 </subviews>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="172"/>
+                                                </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EkJ-ZM-E4g" userLabel="Descrição + comentários">
                                                 <rect key="frame" x="0.0" y="209" width="600" height="160"/>
@@ -75,15 +87,27 @@
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Si-fY-WiI" userLabel="Adicione comentários">
                                                         <rect key="frame" x="0.0" y="80" width="600" height="50"/>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="80" width="400" height="57"/>
+                                                        </variation>
                                                     </stackView>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adicione comentários ao seu pedido..." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hYF-Zh-V87">
                                                         <rect key="frame" x="0.0" y="130" width="600" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <textInputTraits key="textInputTraits"/>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="137" width="400" height="30"/>
+                                                        </variation>
                                                     </textField>
                                                 </subviews>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="202" width="400" height="167"/>
+                                                </variation>
                                             </stackView>
                                         </subviews>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="400" height="369"/>
+                                        </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Edk-8R-jnG" userLabel="Inferior">
                                         <rect key="frame" x="0.0" y="429" width="600" height="151"/>
@@ -177,6 +201,9 @@
                                                         </variation>
                                                     </stackView>
                                                 </subviews>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="101"/>
+                                                </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Csz-AD-s3P" userLabel="Adicionar ao carrinho">
                                                 <rect key="frame" x="0.0" y="121" width="600" height="30"/>
@@ -184,10 +211,19 @@
                                                     <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-mD-gau">
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                                         <state key="normal" title="Adicionar ao carrinho"/>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
+                                                        </variation>
                                                     </button>
                                                 </subviews>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="121" width="400" height="30"/>
+                                                </variation>
                                             </stackView>
                                         </subviews>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="429" width="400" height="151"/>
+                                        </variation>
                                     </stackView>
                                 </subviews>
                             </stackView>
@@ -259,10 +295,10 @@
                                         </constraints>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CartIdentifier" rowHeight="60" id="yWE-cR-yo1" customClass="ItensCartViewCell" customModule="universitariosFamintos" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="28" width="400" height="50"/>
+                                                <rect key="frame" x="0.0" y="28" width="400" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yWE-cR-yo1" id="wdL-Xc-fQO">
-                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="49.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="59.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="2tj-44-GLi">
@@ -342,14 +378,8 @@
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                                     <nil key="highlightedColor"/>
-                                                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="163" height="21"/>
-                                                                                    </variation>
                                                                                 </label>
                                                                             </subviews>
-                                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="21" width="163" height="21"/>
-                                                                            </variation>
                                                                         </stackView>
                                                                     </subviews>
                                                                     <constraints>
@@ -365,12 +395,12 @@
                                                                             <exclude reference="u0a-Eg-QgB"/>
                                                                         </mask>
                                                                         <mask key="constraints">
-                                                                            <exclude reference="H3I-vg-W5o"/>
-                                                                            <exclude reference="fOj-cs-Mz1"/>
-                                                                            <exclude reference="kue-E5-6w9"/>
                                                                             <exclude reference="5Uh-pN-lQs"/>
                                                                             <exclude reference="7qe-MB-Qhv"/>
                                                                             <exclude reference="cZZ-uy-foB"/>
+                                                                            <exclude reference="H3I-vg-W5o"/>
+                                                                            <exclude reference="fOj-cs-Mz1"/>
+                                                                            <exclude reference="kue-E5-6w9"/>
                                                                         </mask>
                                                                     </variation>
                                                                     <variation key="widthClass=compact" misplaced="YES">
@@ -379,12 +409,12 @@
                                                                             <include reference="u0a-Eg-QgB"/>
                                                                         </mask>
                                                                         <mask key="constraints">
-                                                                            <include reference="H3I-vg-W5o"/>
-                                                                            <include reference="fOj-cs-Mz1"/>
-                                                                            <include reference="kue-E5-6w9"/>
                                                                             <include reference="5Uh-pN-lQs"/>
                                                                             <include reference="7qe-MB-Qhv"/>
                                                                             <include reference="cZZ-uy-foB"/>
+                                                                            <include reference="H3I-vg-W5o"/>
+                                                                            <include reference="fOj-cs-Mz1"/>
+                                                                            <include reference="kue-E5-6w9"/>
                                                                         </mask>
                                                                     </variation>
                                                                 </stackView>

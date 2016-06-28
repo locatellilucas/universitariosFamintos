@@ -34,7 +34,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
         super.viewDidLoad()
         
         tableViewCart.dataSource = self
-        let teste1 = Teste(nome: "Pizza", info: "Frango com catupery", qtde: "2", preco: "R$5,00")
+        let teste1 = Teste(nome: "Pizza", info: "Frango com catupiry", qtde: "2", preco: "R$5,00")
         
         self.testes.append(teste1)
         self.testes.append(teste1)
