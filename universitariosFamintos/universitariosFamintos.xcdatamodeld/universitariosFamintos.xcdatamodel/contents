@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
-    <entity name="Pedidos" syncable="YES">
+    <entity name="Pedidos" representedClassName=".Pedidos" syncable="YES">
         <attribute name="restaurante" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="usuario" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Produtos" syncable="YES">
+    <entity name="Produtos" representedClassName=".Produtos" syncable="YES">
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imagem" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="preco" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="restaurante" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="ProdutosPedidos" syncable="YES">
+    <entity name="ProdutosPedidos" representedClassName=".ProdutosPedidos" syncable="YES">
         <attribute name="numPedido" optional="YES" syncable="YES"/>
         <attribute name="produto" optional="YES" syncable="YES"/>
     </entity>
-    <entity name="Restaurantes" syncable="YES">
+    <entity name="Restaurantes" representedClassName=".Restaurantes" syncable="YES">
         <attribute name="categoria" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="imagem" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="local" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
-    <entity name="Usuarios" syncable="YES">
+    <entity name="Usuarios" representedClassName=".Usuarios" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="senha" optional="YES" attributeType="String" syncable="YES"/>
