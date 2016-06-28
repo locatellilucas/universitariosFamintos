@@ -26,13 +26,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="369"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="k8W-Kl-0MU" userLabel="Barra nav + imagem">
-                                                <rect key="frame" x="0.0" y="0.0" width="600" height="229"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="171"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xNX-pT-Yis" userLabel="Barra de navegação">
-                                                        <rect key="frame" x="0.0" y="0.0" width="589" height="102"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="589" height="44"/>
                                                         <subviews>
                                                             <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7UM-mc-5zz">
-                                                                <rect key="frame" x="0.0" y="0.0" width="589" height="102"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="589" height="44"/>
                                                                 <items>
                                                                     <navigationItem title="Prato" id="N8d-lp-CZu">
                                                                         <barButtonItem key="backBarButtonItem" title="Voltar" id="O3N-Vb-RQT"/>
@@ -48,7 +48,7 @@
                                                         </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m3E-yM-CXa" userLabel="Imagem geral">
-                                                        <rect key="frame" x="0.0" y="102" width="590" height="127"/>
+                                                        <rect key="frame" x="0.0" y="44" width="590" height="127"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="UU2-ah-GpS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="590" height="127"/>
@@ -68,7 +68,7 @@
                                                 </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EkJ-ZM-E4g" userLabel="Descrição + comentários">
-                                                <rect key="frame" x="0.0" y="259" width="600" height="110"/>
+                                                <rect key="frame" x="0.0" y="201" width="600" height="168"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="gM5-Du-uyb" userLabel="Descrição prato">
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
@@ -86,10 +86,10 @@
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Si-fY-WiI" userLabel="Adicione comentários">
-                                                        <rect key="frame" x="0.0" y="80" width="600" height="30"/>
+                                                        <rect key="frame" x="0.0" y="80" width="600" height="88"/>
                                                         <subviews>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Adicione comentários ao seu pedido..." textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="hYF-Zh-V87">
-                                                                <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="600" height="88"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                                 <variation key="widthClass=compact" misplaced="YES">
@@ -213,7 +213,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Csz-AD-s3P" userLabel="Adicionar ao carrinho">
                                                 <rect key="frame" x="0.0" y="121" width="600" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-mD-gau">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-mD-gau">
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                                         <state key="normal" title="Adicionar ao carrinho"/>
                                                         <connections>
