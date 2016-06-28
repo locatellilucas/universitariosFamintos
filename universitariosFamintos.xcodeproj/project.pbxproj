@@ -27,6 +27,11 @@
 		3FB36E5D1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3FB36E5B1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld */; };
 		3FB36E5F1D1DCAB200119DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB36E5E1D1DCAB200119DDA /* Assets.xcassets */; };
 		3FB36E621D1DCAB200119DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB36E601D1DCAB200119DDA /* LaunchScreen.storyboard */; };
+		3FC9C1611D23023500D52775 /* PedidosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9C15D1D23023500D52775 /* PedidosDAO.swift */; };
+		3FC9C1621D23023500D52775 /* ProdutosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9C15E1D23023500D52775 /* ProdutosDAO.swift */; };
+		3FC9C1631D23023500D52775 /* RestaurantesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9C15F1D23023500D52775 /* RestaurantesDAO.swift */; };
+		3FC9C1641D23023500D52775 /* UsuariosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9C1601D23023500D52775 /* UsuariosDAO.swift */; };
+		3FC9C1661D23024500D52775 /* ProdutosPedidosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FC9C1651D23024500D52775 /* ProdutosPedidosDAO.swift */; };
 		3FF9BD0C1D22F2F600784E41 /* InformacaoPratosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +58,11 @@
 		3FB36E5E1D1DCAB200119DDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3FB36E611D1DCAB200119DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB36E631D1DCAB200119DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FC9C15D1D23023500D52775 /* PedidosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PedidosDAO.swift; path = ../../../Users/student/Documents/universitariosFamintos/universitariosFamintos/PedidosDAO.swift; sourceTree = "<group>"; };
+		3FC9C15E1D23023500D52775 /* ProdutosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProdutosDAO.swift; path = ../../../Users/student/Documents/universitariosFamintos/universitariosFamintos/ProdutosDAO.swift; sourceTree = "<group>"; };
+		3FC9C15F1D23023500D52775 /* RestaurantesDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RestaurantesDAO.swift; path = ../../../Users/student/Documents/universitariosFamintos/universitariosFamintos/RestaurantesDAO.swift; sourceTree = "<group>"; };
+		3FC9C1601D23023500D52775 /* UsuariosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UsuariosDAO.swift; path = ../../../Users/student/Documents/universitariosFamintos/universitariosFamintos/UsuariosDAO.swift; sourceTree = "<group>"; };
+		3FC9C1651D23024500D52775 /* ProdutosPedidosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProdutosPedidosDAO.swift; path = ../../../Users/student/Documents/universitariosFamintos/ProdutosPedidosDAO.swift; sourceTree = "<group>"; };
 		3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformacaoPratosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +97,11 @@
 		3F0DA3D11D22F3EE00CC3C5B /* DAO */ = {
 			isa = PBXGroup;
 			children = (
+				3FC9C1651D23024500D52775 /* ProdutosPedidosDAO.swift */,
+				3FC9C15D1D23023500D52775 /* PedidosDAO.swift */,
+				3FC9C15E1D23023500D52775 /* ProdutosDAO.swift */,
+				3FC9C15F1D23023500D52775 /* RestaurantesDAO.swift */,
+				3FC9C1601D23023500D52775 /* UsuariosDAO.swift */,
 			);
 			name = DAO;
 			sourceTree = "<group>";
@@ -235,14 +250,19 @@
 				3F0DA3CF1D22E5DD00CC3C5B /* ItensCartViewCell.swift in Sources */,
 				3F0DA3E21D22F52300CC3C5B /* ProdutosPedidos+CoreDataProperties.swift in Sources */,
 				3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */,
+				3FC9C1661D23024500D52775 /* ProdutosPedidosDAO.swift in Sources */,
 				3F0DA3E41D22F52300CC3C5B /* Restaurantes+CoreDataProperties.swift in Sources */,
+				3FC9C1611D23023500D52775 /* PedidosDAO.swift in Sources */,
+				3FC9C1631D23023500D52775 /* RestaurantesDAO.swift in Sources */,
 				3F0DA3E61D22F52300CC3C5B /* Produtos+CoreDataProperties.swift in Sources */,
 				3F0DA3E51D22F52300CC3C5B /* Restaurantes.swift in Sources */,
+				3FC9C1621D23023500D52775 /* ProdutosDAO.swift in Sources */,
 				3F0DA3E31D22F52300CC3C5B /* ProdutosPedidos.swift in Sources */,
 				3F0DA3E11D22F52300CC3C5B /* Usuarios.swift in Sources */,
 				3FB36E571D1DCAB200119DDA /* ViewController.swift in Sources */,
 				3F0DA3DE1D22F52300CC3C5B /* Pedidos+CoreDataProperties.swift in Sources */,
 				3FB36E5D1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld in Sources */,
+				3FC9C1641D23023500D52775 /* UsuariosDAO.swift in Sources */,
 				3F0DA3CE1D22E5DD00CC3C5B /* CarrinhoViewController.swift in Sources */,
 				3FF9BD0C1D22F2F600784E41 /* InformacaoPratosViewController.swift in Sources */,
 				3FB36E551D1DCAB200119DDA /* AppDelegate.swift in Sources */,
