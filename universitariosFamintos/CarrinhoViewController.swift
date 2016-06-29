@@ -16,7 +16,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
     
 
     var listaProdutos = ProdutosDAO.buscarTodosProdutos()
-    var produto: Produtos
+    var produto: Produtos?
 
     override func viewDidLoad() {
         super.viewDidLoad()
