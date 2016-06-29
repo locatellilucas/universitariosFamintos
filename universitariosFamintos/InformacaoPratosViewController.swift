@@ -13,8 +13,8 @@ class InformacaoPratosViewController: UIViewController {
     @IBOutlet weak var imagemPratoMeusPratos: UIImageView!
     @IBOutlet weak var descricaoPratoMeusPratos: UILabel!
     @IBOutlet weak var comentariosMeusPratos: UITextField!
-    @IBOutlet weak var precoUnitarioMeusPratos: UILabel!
-    @IBOutlet weak var valorQuantidadeMeusPratos: UITextField!
+    @IBOutlet weak var precoUnitarioMeusPratos:UILabel!
+    @IBOutlet weak var valorQuantidadeMeusPratos: UILabel!
     @IBOutlet weak var precoTotalMeusPratos: UILabel!
     
     var produto: Produtos?
@@ -32,10 +32,11 @@ class InformacaoPratosViewController: UIViewController {
         self.descricaoPratoMeusPratos.text = produto?.nome
         self.precoUnitarioMeusPratos.text = produto?.preco
         
-        let precoUnit = Double(self.precoUnitarioMeusPratos.text!)
-        let qtde = Double(self.valorQuantidadeMeusPratos.text!)
+       // let precoUnit = Double(self.precoUnitarioMeusPratos.text!)
+        //let qtde = Double(self.valorQuantidadeMeusPratos.text!)
         
-      
+        
+ 
         
         
         // Do any additional setup after loading the view.
@@ -47,14 +48,23 @@ class InformacaoPratosViewController: UIViewController {
     }
     
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+     if segue.identifier == "SegueADDCarrinho"{
+        if let addCarrinho = segue.destinationViewController as? CarrinhoViewController{
+     
+            addCarrinho.produto = self.produto
+     
+     
+        }
+     }
+
     }
-    */
+ 
 
 }

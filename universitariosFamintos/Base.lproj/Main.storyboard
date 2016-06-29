@@ -19,13 +19,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="5JX-qI-4Fl">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="5JX-qI-4Fl">
                                 <rect key="frame" x="0.0" y="29" width="600" height="492"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9iI-RE-xkw" userLabel="Superior">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="9iI-RE-xkw" userLabel="Superior">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="281"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="k8W-Kl-0MU" userLabel="Barra nav + imagem">
+                                            <stackView opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="k8W-Kl-0MU" userLabel="Barra nav + imagem">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="141"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="xNX-pT-Yis" userLabel="Barra de navegação">
@@ -38,37 +38,18 @@
                                                                         <barButtonItem key="backBarButtonItem" title="Voltar" id="O3N-Vb-RQT"/>
                                                                     </navigationItem>
                                                                 </items>
-                                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="14"/>
-                                                                </variation>
                                                             </navigationBar>
                                                         </subviews>
-                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="400" height="14"/>
-                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m3E-yM-CXa" userLabel="Imagem geral">
                                                         <rect key="frame" x="0.0" y="14" width="590" height="127"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="UU2-ah-GpS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="590" height="127"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="127" id="eC5-yC-5CA"/>
-                                                                    <constraint firstAttribute="width" constant="590" id="hqx-3J-lR2"/>
-                                                                </constraints>
-                                                                <variation key="widthClass=compact" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="127"/>
-                                                                </variation>
                                                             </imageView>
                                                         </subviews>
-                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="14" width="400" height="127"/>
-                                                        </variation>
                                                     </stackView>
                                                 </subviews>
-                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="141"/>
-                                                </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EkJ-ZM-E4g" userLabel="Descrição + comentários">
                                                 <rect key="frame" x="0.0" y="171" width="600" height="110"/>
@@ -80,19 +61,12 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="80" id="ddm-zg-PMc"/>
-                                                                    <constraint firstAttribute="width" constant="588" id="gbB-Fb-O2S"/>
                                                                 </constraints>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                 <nil key="highlightedColor"/>
-                                                                <variation key="widthClass=compact" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
-                                                                </variation>
                                                             </label>
                                                         </subviews>
-                                                        <variation key="widthClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="400" height="80"/>
-                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="0Si-fY-WiI" userLabel="Adicione comentários">
                                                         <rect key="frame" x="0.0" y="80" width="600" height="30"/>
@@ -101,23 +75,24 @@
                                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits"/>
-                                                                <variation key="widthClass=compact" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
-                                                                </variation>
                                                             </textField>
                                                         </subviews>
-                                                        <variation key="widthClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="80" width="400" height="30"/>
-                                                        </variation>
                                                     </stackView>
                                                 </subviews>
-                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="171" width="400" height="110"/>
-                                                </variation>
                                             </stackView>
                                         </subviews>
-                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="0.0" width="400" height="281"/>
+                                        <constraints>
+                                            <constraint firstItem="EkJ-ZM-E4g" firstAttribute="top" secondItem="k8W-Kl-0MU" secondAttribute="bottom" constant="25" id="D4N-xa-qDd"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="D4N-xa-qDd"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="D4N-xa-qDd"/>
+                                            </mask>
                                         </variation>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Edk-8R-jnG" userLabel="Inferior">
@@ -137,14 +112,8 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
-                                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="116" height="21"/>
-                                                                        </variation>
                                                                     </label>
                                                                 </subviews>
-                                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="116" height="21"/>
-                                                                </variation>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="pHT-37-xTd" userLabel="Preço unitário - valor">
                                                                 <rect key="frame" x="116" y="0.0" width="61" height="21"/>
@@ -154,19 +123,10 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
-                                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="21"/>
-                                                                        </variation>
                                                                     </label>
                                                                 </subviews>
-                                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="116" y="0.0" width="61" height="21"/>
-                                                                </variation>
                                                             </stackView>
                                                         </subviews>
-                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="224" y="0.0" width="176" height="21"/>
-                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OnU-BN-UYb" userLabel="Quantidade + stapper">
                                                         <rect key="frame" x="474" y="36" width="126" height="30"/>
@@ -179,31 +139,15 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
-                                                                        <variation key="widthClass=compact" ambiguous="YES">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="98" height="30"/>
-                                                                        </variation>
                                                                     </label>
                                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yc5-xa-3rm">
                                                                         <rect key="frame" x="98" y="0.0" width="28" height="30"/>
                                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                         <textInputTraits key="textInputTraits" autocapitalizationType="allCharacters" keyboardType="numbersAndPunctuation"/>
-                                                                        <variation key="widthClass=compact" ambiguous="YES">
-                                                                            <rect key="frame" x="98" y="0.0" width="28" height="30"/>
-                                                                        </variation>
                                                                     </textField>
                                                                 </subviews>
-                                                                <variation key="widthClass=compact" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="126" height="30"/>
-                                                                </variation>
                                                             </stackView>
                                                         </subviews>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="30" id="MLX-OK-L4N"/>
-                                                            <constraint firstAttribute="width" constant="126" id="YyE-iT-RZy"/>
-                                                        </constraints>
-                                                        <variation key="widthClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="274" y="36" width="126" height="30"/>
-                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="UHx-ua-PXn" userLabel="Preço total">
                                                         <rect key="frame" x="425" y="81" width="176" height="21"/>
@@ -216,14 +160,8 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
-                                                                        <variation key="widthClass=compact" ambiguous="YES">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="92" height="21"/>
-                                                                        </variation>
                                                                     </label>
                                                                 </subviews>
-                                                                <variation key="widthClass=compact" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="92" height="21"/>
-                                                                </variation>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="cJk-no-wi3" userLabel="Preço total - valor">
                                                                 <rect key="frame" x="115" y="0.0" width="61" height="21"/>
@@ -233,24 +171,12 @@
                                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                         <nil key="highlightedColor"/>
-                                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="61" height="21"/>
-                                                                        </variation>
                                                                     </label>
                                                                 </subviews>
-                                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="115" y="0.0" width="61" height="21"/>
-                                                                </variation>
                                                             </stackView>
                                                         </subviews>
-                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="225" y="81" width="176" height="21"/>
-                                                        </variation>
                                                     </stackView>
                                                 </subviews>
-                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="101"/>
-                                                </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Csz-AD-s3P" userLabel="Adicionar ao carrinho">
                                                 <rect key="frame" x="0.0" y="121" width="600" height="30"/>
@@ -258,32 +184,29 @@
                                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-mD-gau">
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                                         <state key="normal" title="Adicionar ao carrinho"/>
-                                                        <variation key="widthClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
-                                                        </variation>
                                                         <connections>
                                                             <segue destination="T4Y-tz-LTt" kind="show" id="rwz-mD-Fw4"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
-                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="121" width="400" height="30"/>
-                                                </variation>
                                             </stackView>
                                         </subviews>
-                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                            <rect key="frame" x="0.0" y="341" width="400" height="151"/>
-                                        </variation>
                                     </stackView>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="5JX-qI-4Fl" secondAttribute="trailing" constant="-20" id="0MB-Zj-RRS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5JX-qI-4Fl" secondAttribute="trailing" constant="-20" id="0MB-Zj-RRS">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
                             <constraint firstItem="5JX-qI-4Fl" firstAttribute="top" secondItem="gCH-Zg-9VO" secondAttribute="bottom" id="RHv-dG-8L0"/>
-                            <constraint firstItem="ygK-7Q-ekj" firstAttribute="top" secondItem="5JX-qI-4Fl" secondAttribute="bottom" id="USn-ad-6SM"/>
-                            <constraint firstItem="5JX-qI-4Fl" firstAttribute="leading" secondItem="oKj-S3-Da9" secondAttribute="leadingMargin" constant="-20" id="WNc-zW-tsH"/>
+                            <constraint firstItem="ygK-7Q-ekj" firstAttribute="top" secondItem="5JX-qI-4Fl" secondAttribute="bottom" id="USn-ad-6SM">
+                                <variation key="widthClass=compact" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="5JX-qI-4Fl" firstAttribute="leading" secondItem="oKj-S3-Da9" secondAttribute="leadingMargin" id="WNc-zW-tsH">
+                                <variation key="widthClass=compact" constant="0.0"/>
+                            </constraint>
                         </constraints>
                     </view>
                     <connections>
