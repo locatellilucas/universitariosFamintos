@@ -22,6 +22,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
         
         tableViewCart.dataSource = self
 
+       
         
         let produto: Produtos = Produtos()
         produto.nome = "Pizza"
@@ -36,6 +37,9 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
         produto2.descricao = "Calabresa"
         produto2.imagem = "nada"
         produto2.restaurante = "Pizzaria Augusta"
+        
+        
+        
       
         /*
         ProdutosDAO.inserir(produto)
