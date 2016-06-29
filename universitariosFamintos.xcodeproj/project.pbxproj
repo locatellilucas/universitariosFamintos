@@ -33,6 +33,8 @@
 		3FB36E5F1D1DCAB200119DDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3FB36E5E1D1DCAB200119DDA /* Assets.xcassets */; };
 		3FB36E621D1DCAB200119DDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3FB36E601D1DCAB200119DDA /* LaunchScreen.storyboard */; };
 		3FBB47C11D230AF3005312BA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB47C01D230AF3005312BA /* LoginViewController.swift */; };
+		3FBB47C31D230DEE005312BA /* MeusPedidosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB47C21D230DEE005312BA /* MeusPedidosCell.swift */; };
+		3FBB47C71D230F02005312BA /* MeusPedidosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB47C61D230F02005312BA /* MeusPedidosViewController.swift */; };
 		3FF9BD0C1D22F2F600784E41 /* InformacaoPratosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,8 @@
 		3FB36E611D1DCAB200119DDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3FB36E631D1DCAB200119DDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3FBB47C01D230AF3005312BA /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3FBB47C21D230DEE005312BA /* MeusPedidosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusPedidosCell.swift; sourceTree = "<group>"; };
+		3FBB47C61D230F02005312BA /* MeusPedidosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusPedidosViewController.swift; sourceTree = "<group>"; };
 		3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformacaoPratosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +129,7 @@
 				3F0DA3CC1D22E5DD00CC3C5B /* CarrinhoViewController.swift */,
 				3FB36E561D1DCAB200119DDA /* ViewController.swift */,
 				3FA165B31D219E780016EC67 /* PratosViewController.swift */,
+				3FBB47C61D230F02005312BA /* MeusPedidosViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -141,6 +146,7 @@
 		3FA165B21D219E4C0016EC67 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				3FBB47C21D230DEE005312BA /* MeusPedidosCell.swift */,
 				3F0DA3CD1D22E5DD00CC3C5B /* ItensCartViewCell.swift */,
 				3FA165B01D219E400016EC67 /* PratosCell.swift */,
 			);
@@ -254,6 +260,7 @@
 				3F0DA3E21D22F52300CC3C5B /* ProdutosPedidos+CoreDataProperties.swift in Sources */,
 				3F77AA971D23070E00C3CA28 /* PedidosDAO.swift in Sources */,
 				3F77AA9D1D23084200C3CA28 /* ProdutosPedidosDAO.swift in Sources */,
+				3FBB47C31D230DEE005312BA /* MeusPedidosCell.swift in Sources */,
 				3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */,
 				3F0DA3E41D22F52300CC3C5B /* Restaurantes+CoreDataProperties.swift in Sources */,
 				3F77AA991D23074400C3CA28 /* RestaurantesDAO.swift in Sources */,
@@ -269,6 +276,7 @@
 				3F77AA9B1D2307F500C3CA28 /* UsuariosDAO.swift in Sources */,
 				3F0DA3CE1D22E5DD00CC3C5B /* CarrinhoViewController.swift in Sources */,
 				3FF9BD0C1D22F2F600784E41 /* InformacaoPratosViewController.swift in Sources */,
+				3FBB47C71D230F02005312BA /* MeusPedidosViewController.swift in Sources */,
 				3FB36E551D1DCAB200119DDA /* AppDelegate.swift in Sources */,
 				3F0DA3E01D22F52300CC3C5B /* Usuarios+CoreDataProperties.swift in Sources */,
 				3F0DA3DF1D22F52300CC3C5B /* Pedidos.swift in Sources */,
