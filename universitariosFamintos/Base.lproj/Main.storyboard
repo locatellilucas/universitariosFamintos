@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oB3-Bg-ITa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ulr-0I-LCw">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -210,14 +210,7 @@
                             </constraint>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="comentariosMeusPratos" destination="hYF-Zh-V87" id="88P-Sm-GkG"/>
-                        <outlet property="descricaoPratoMeusPratos" destination="zhB-6C-aSK" id="y42-Mu-7AJ"/>
-                        <outlet property="imagemPratoMeusPratos" destination="UU2-ah-GpS" id="ClH-wi-ySH"/>
-                        <outlet property="precoTotalMeusPratos" destination="8F5-wC-q6J" id="FXJ-3k-vXY"/>
-                        <outlet property="precoUnitarioMeusPratos" destination="QKP-zR-I4d" id="gSa-Iu-yPd"/>
-                        <outlet property="valorQuantidadeMeusPratos" destination="yc5-xa-3rm" id="PZf-Qa-Y2T"/>
-                    </connections>
+                    <navigationItem key="navigationItem" title="Descricao Prato" id="9Zu-HY-zg4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Gv-ka-buC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -360,8 +353,14 @@
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
+                                                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="21"/>
+                                                                                    </variation>
                                                                                 </label>
                                                                             </subviews>
+                                                                            <variation key="widthClass=compact" misplaced="YES">
+                                                                                <rect key="frame" x="0.0" y="21" width="172" height="21"/>
+                                                                            </variation>
                                                                         </stackView>
                                                                     </subviews>
                                                                     <constraints>
@@ -503,6 +502,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" title="Carrinho" id="18e-l4-cpx"/>
                     <connections>
                         <outlet property="tableViewCart" destination="DHN-MX-am3" id="CTz-v6-cmq"/>
                     </connections>
@@ -700,6 +700,8 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Meus Pedidos" image="purchase_order" id="3YC-Xt-g2e"/>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6N-hX-sxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -721,11 +723,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kmq-mK-Q8M">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kmq-mK-Q8M">
                                             <rect key="frame" x="15" y="15" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="65F-51-cz2"/>
+                                                <constraint firstAttribute="width" constant="80" id="a1D-ew-r9F"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pizzaria do Zé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRI-5t-CVu">
-                                            <rect key="frame" x="111" y="27" width="481" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizzaria do Zé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRI-5t-CVu">
+                                            <rect key="frame" x="111" y="27" width="129.5" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="OC1-iL-2pA"/>
                                             </constraints>
@@ -733,8 +739,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pizzas e massas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzJ-sN-fhq">
-                                            <rect key="frame" x="111" y="56" width="481" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizzas e massas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzJ-sN-fhq">
+                                            <rect key="frame" x="111" y="56" width="112.5" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="sxt-fi-Hdx"/>
                                             </constraints>
@@ -744,14 +750,21 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="hzJ-sN-fhq" firstAttribute="top" secondItem="HRI-5t-CVu" secondAttribute="bottom" constant="8" id="36w-So-xlz"/>
                                         <constraint firstItem="kmq-mK-Q8M" firstAttribute="centerY" secondItem="Rec-p9-Qrw" secondAttribute="centerY" id="Dxx-Mp-dOh"/>
                                         <constraint firstItem="kmq-mK-Q8M" firstAttribute="top" secondItem="Rec-p9-Qrw" secondAttribute="topMargin" constant="7" id="KJR-Na-APy"/>
                                         <constraint firstItem="kmq-mK-Q8M" firstAttribute="leading" secondItem="Rec-p9-Qrw" secondAttribute="leadingMargin" constant="7" id="Kz7-zN-cbE"/>
                                         <constraint firstItem="hzJ-sN-fhq" firstAttribute="leading" secondItem="kmq-mK-Q8M" secondAttribute="trailing" constant="16" id="SH5-P4-QUq"/>
                                         <constraint firstItem="HRI-5t-CVu" firstAttribute="top" secondItem="Rec-p9-Qrw" secondAttribute="topMargin" constant="19" id="WqI-ba-zBV"/>
+                                        <constraint firstItem="hzJ-sN-fhq" firstAttribute="leading" secondItem="kmq-mK-Q8M" secondAttribute="trailing" constant="16" id="tQa-tL-04W"/>
                                         <constraint firstItem="hzJ-sN-fhq" firstAttribute="top" secondItem="HRI-5t-CVu" secondAttribute="bottom" constant="8" id="wZL-5o-lrr"/>
                                         <constraint firstItem="HRI-5t-CVu" firstAttribute="leading" secondItem="kmq-mK-Q8M" secondAttribute="trailing" constant="16" id="zcK-Fq-oc1"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="SH5-P4-QUq"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="restauranteImage" destination="kmq-mK-Q8M" id="84i-AX-zsO"/>
@@ -779,7 +792,7 @@
             </objects>
             <point key="canvasLocation" x="1840" y="-154"/>
         </scene>
-        <!--Minha Tela-->
+        <!--Cardapio-->
         <scene sceneID="HEh-pt-PUg">
             <objects>
                 <viewController id="oB3-Bg-ITa" customClass="PratosViewController" customModule="universitariosFamintos" customModuleProvider="target" sceneMemberID="viewController">
@@ -843,7 +856,7 @@
                                                             </variation>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="yHJ-fr-yoM">
-                                                            <rect key="frame" x="158" y="18" width="158" height="21"/>
+                                                            <rect key="frame" x="158" y="19" width="158" height="21"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="b0U-cX-NyK">
                                                                     <rect key="frame" x="0.0" y="0.0" width="71" height="21"/>
@@ -922,7 +935,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="166" width="400" height="385"/>
+                                    <rect key="frame" x="0.0" y="186" width="400" height="423"/>
                                 </variation>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cfr-cE-977" userLabel="image+description">
@@ -963,7 +976,7 @@
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=compact" misplaced="YES">
-                                    <rect key="frame" x="20" y="20" width="360" height="100"/>
+                                    <rect key="frame" x="20" y="78" width="360" height="100"/>
                                     <mask key="constraints">
                                         <include reference="6zD-F2-XV1"/>
                                     </mask>
@@ -973,6 +986,9 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="200" width="360" height="30"/>
+                                </variation>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1017,8 +1033,8 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Minha Tela" id="b1u-cx-crw"/>
-                    <navigationItem key="navigationItem" id="DGb-nE-y3a"/>
+                    <tabBarItem key="tabBarItem" title="Minha Tela" id="b1u-cx-crw" userLabel="Detalhes Restaurantes"/>
+                    <navigationItem key="navigationItem" title="Cardapio" id="DGb-nE-y3a"/>
                     <connections>
                         <outlet property="tableviewPrato" destination="yqc-wD-yYg" id="Ztm-Eq-SYd"/>
                     </connections>
@@ -1045,12 +1061,12 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uxE-q6-5yo">
                                         <rect key="frame" x="0.0" y="0.0" width="60" height="70"/>
                                         <subviews>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zAT-Zx-6VN">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="zAT-Zx-6VN">
                                                 <rect key="frame" x="0.0" y="0.0" width="60" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDf-ff-9yX">
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="PDf-ff-9yX">
                                                 <rect key="frame" x="0.0" y="40" width="60" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -1070,9 +1086,11 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-yS-pwM">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-yS-pwM">
                                         <rect key="frame" x="0.0" y="120" width="159" height="30"/>
-                                        <state key="normal" title="Entrar com o Facebook"/>
+                                        <state key="normal" title="Entrar com o Facebook">
+                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -1114,18 +1132,58 @@
                                     <rect key="frame" x="84" y="501" width="232" height="30"/>
                                 </variation>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="05V-z0-mSC">
+                                <rect key="frame" x="0.0" y="213" width="271" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico-facebook" translatesAutoresizingMaskIntoConstraints="NO" id="SXH-ep-Ozk">
+                                        <rect key="frame" x="20" y="20" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="bS9-Y2-Jml"/>
+                                            <constraint firstAttribute="width" constant="40" id="utt-qX-jze"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="bS9-Y2-Jml"/>
+                                                <exclude reference="utt-qX-jze"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                            <mask key="constraints">
+                                                <include reference="bS9-Y2-Jml"/>
+                                                <include reference="utt-qX-jze"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGz-58-Vt9">
+                                        <rect key="frame" x="68" y="25" width="183" height="30"/>
+                                        <state key="normal" title="Entrar com o Facebook">
+                                            <color key="titleColor" red="0.094157796092603191" green="0.28547714405375724" blue="0.63657852564102568" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="40" y="0.0" width="320" height="40"/>
+                                        </variation>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Q1G-G8-XET" secondAttribute="trailing" id="5tb-Ay-xha"/>
+                            <constraint firstItem="05V-z0-mSC" firstAttribute="leading" secondItem="Ky4-2W-o8u" secondAttribute="leadingMargin" id="6uf-Py-49q"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="05V-z0-mSC" secondAttribute="trailing" id="D4y-zW-fZz"/>
                             <constraint firstItem="Q1G-G8-XET" firstAttribute="leading" secondItem="Ky4-2W-o8u" secondAttribute="leadingMargin" id="Hko-8k-n3r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="V86-Uu-it1" secondAttribute="trailing" constant="50" id="TCf-fZ-Vj1"/>
                             <constraint firstItem="V86-Uu-it1" firstAttribute="leading" secondItem="Ky4-2W-o8u" secondAttribute="leadingMargin" constant="50" id="Urp-Xv-z1M"/>
                             <constraint firstItem="y1W-nu-JK4" firstAttribute="top" secondItem="V86-Uu-it1" secondAttribute="bottom" constant="30" id="Y6f-o2-ley"/>
                             <constraint firstItem="Q1G-G8-XET" firstAttribute="top" secondItem="FlS-NK-QFH" secondAttribute="bottom" constant="30" id="bMr-dL-SJE"/>
+                            <constraint firstItem="05V-z0-mSC" firstAttribute="top" secondItem="Q1G-G8-XET" secondAttribute="bottom" constant="29" id="dcz-iL-dhh"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="6uf-Py-49q"/>
+                                <exclude reference="D4y-zW-fZz"/>
+                                <exclude reference="dcz-iL-dhh"/>
                                 <exclude reference="TCf-fZ-Vj1"/>
                                 <exclude reference="Urp-Xv-z1M"/>
                                 <exclude reference="Y6f-o2-ley"/>
@@ -1133,6 +1191,9 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
+                                <include reference="6uf-Py-49q"/>
+                                <include reference="D4y-zW-fZz"/>
+                                <include reference="dcz-iL-dhh"/>
                                 <include reference="TCf-fZ-Vj1"/>
                                 <include reference="Urp-Xv-z1M"/>
                                 <include reference="Y6f-o2-ley"/>
@@ -1150,12 +1211,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yvt-Sb-4kf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="490" y="1261"/>
+            <point key="canvasLocation" x="489" y="1261"/>
         </scene>
     </scenes>
     <resources>
         <image name="2000px-Pizza_Hut_logo" width="2000" height="2000"/>
         <image name="default" width="640" height="480"/>
+        <image name="ico-facebook" width="128" height="128"/>
         <image name="more" width="24" height="24"/>
         <image name="purchase_order" width="24" height="24"/>
         <image name="restaurant" width="24" height="24"/>
