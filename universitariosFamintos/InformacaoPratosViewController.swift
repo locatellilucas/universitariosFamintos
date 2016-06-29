@@ -17,7 +17,7 @@ class InformacaoPratosViewController: UIViewController {
     @IBOutlet weak var valorQuantidadeMeusPratos: UITextField!
     @IBOutlet weak var precoTotalMeusPratos: UILabel!
     
-    var prato: Pratos?
+    var produto: Produtos?
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -29,6 +29,14 @@ class InformacaoPratosViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.descricaoPratoMeusPratos.text = produto?.nome
+        self.precoUnitarioMeusPratos.text = produto?.preco
+        
+        let precoUnit = Double(self.precoUnitarioMeusPratos.text!)
+        let qtde = Double(self.valorQuantidadeMeusPratos.text!)
+        
+      
+        
         
         // Do any additional setup after loading the view.
     }
