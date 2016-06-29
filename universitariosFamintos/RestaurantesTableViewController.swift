@@ -36,8 +36,8 @@ class RestaurantesTableViewController: UITableViewController {
 
         restaurantesTableView.dataSource = self
         
-        let restaurante1 = Restaurante(img: "Pizza", nome: "Pizzaria do Bob", tipo: "Pizzas e massas")
-        let restaurante2 = Restaurante(img: "Carne", nome: "Churrascaria do Bob", tipo: "Carnes")
+        let restaurante1 = Restaurante(img: "pizza", nome: "Pizzaria do Bob", tipo: "Pizzas e massas")
+        let restaurante2 = Restaurante(img: "paoqueijo", nome: "Padaria do Bob", tipo: "Padaria")
         
         self.restaurantes.append(restaurante1)
         self.restaurantes.append(restaurante2)

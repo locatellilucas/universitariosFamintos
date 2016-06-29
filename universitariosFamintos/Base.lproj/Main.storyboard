@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="oB3-Bg-ITa">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ulr-0I-LCw">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -255,7 +255,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Csz-AD-s3P" userLabel="Adicionar ao carrinho">
                                                 <rect key="frame" x="0.0" y="121" width="600" height="30"/>
                                                 <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-mD-gau">
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-mD-gau">
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                                         <state key="normal" title="Adicionar ao carrinho"/>
                                                         <variation key="widthClass=compact" ambiguous="YES">
@@ -797,11 +797,15 @@
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="109.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kmq-mK-Q8M">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kmq-mK-Q8M">
                                             <rect key="frame" x="15" y="15" width="80" height="80"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="80" id="65F-51-cz2"/>
+                                                <constraint firstAttribute="width" constant="80" id="a1D-ew-r9F"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pizzaria do Zé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRI-5t-CVu">
-                                            <rect key="frame" x="111" y="27" width="481" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizzaria do Zé" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" highlighted="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HRI-5t-CVu">
+                                            <rect key="frame" x="111" y="27" width="129.5" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="OC1-iL-2pA"/>
                                             </constraints>
@@ -809,8 +813,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Pizzas e massas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzJ-sN-fhq">
-                                            <rect key="frame" x="111" y="56" width="481" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pizzas e massas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzJ-sN-fhq">
+                                            <rect key="frame" x="111" y="56" width="112.5" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="sxt-fi-Hdx"/>
                                             </constraints>
@@ -820,14 +824,21 @@
                                         </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="hzJ-sN-fhq" firstAttribute="top" secondItem="HRI-5t-CVu" secondAttribute="bottom" constant="8" id="36w-So-xlz"/>
                                         <constraint firstItem="kmq-mK-Q8M" firstAttribute="centerY" secondItem="Rec-p9-Qrw" secondAttribute="centerY" id="Dxx-Mp-dOh"/>
                                         <constraint firstItem="kmq-mK-Q8M" firstAttribute="top" secondItem="Rec-p9-Qrw" secondAttribute="topMargin" constant="7" id="KJR-Na-APy"/>
                                         <constraint firstItem="kmq-mK-Q8M" firstAttribute="leading" secondItem="Rec-p9-Qrw" secondAttribute="leadingMargin" constant="7" id="Kz7-zN-cbE"/>
                                         <constraint firstItem="hzJ-sN-fhq" firstAttribute="leading" secondItem="kmq-mK-Q8M" secondAttribute="trailing" constant="16" id="SH5-P4-QUq"/>
                                         <constraint firstItem="HRI-5t-CVu" firstAttribute="top" secondItem="Rec-p9-Qrw" secondAttribute="topMargin" constant="19" id="WqI-ba-zBV"/>
+                                        <constraint firstItem="hzJ-sN-fhq" firstAttribute="leading" secondItem="kmq-mK-Q8M" secondAttribute="trailing" constant="16" id="tQa-tL-04W"/>
                                         <constraint firstItem="hzJ-sN-fhq" firstAttribute="top" secondItem="HRI-5t-CVu" secondAttribute="bottom" constant="8" id="wZL-5o-lrr"/>
                                         <constraint firstItem="HRI-5t-CVu" firstAttribute="leading" secondItem="kmq-mK-Q8M" secondAttribute="trailing" constant="16" id="zcK-Fq-oc1"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="SH5-P4-QUq"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="restauranteImage" destination="kmq-mK-Q8M" id="84i-AX-zsO"/>
@@ -879,13 +890,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BcH-vF-gQR">
-                                                    <rect key="frame" x="-12" y="-12" width="316" height="56"/>
+                                                    <rect key="frame" x="-12" y="-12" width="316" height="57"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uo7-PL-h3H">
-                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="56"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="57"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f2b-b8-0wD" userLabel="imgPrato">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="56"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="57"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="SeM-lH-OQh"/>
                                                                         <constraint firstAttribute="width" constant="50" id="b3w-X0-sRh"/>
@@ -905,7 +916,7 @@
                                                                     </variation>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbj-Bx-JgQ" userLabel="plateName">
-                                                                    <rect key="frame" x="79" y="0.0" width="79" height="56"/>
+                                                                    <rect key="frame" x="79" y="0.0" width="79" height="57"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
