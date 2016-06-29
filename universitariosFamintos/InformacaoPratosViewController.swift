@@ -10,13 +10,26 @@ import UIKit
 
 class InformacaoPratosViewController: UIViewController {
 
+    @IBOutlet weak var imagemPratoMeusPratos: UIImageView!
+    @IBOutlet weak var descricaoPratoMeusPratos: UILabel!
+    @IBOutlet weak var comentariosMeusPratos: UITextField!
+    @IBOutlet weak var precoUnitarioMeusPratos: UILabel!
+    @IBOutlet weak var valorQuantidadeMeusPratos: UITextField!
+    @IBOutlet weak var precoTotalMeusPratos: UILabel!
+    
+    var prato: Pratos?
+    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        
+        
+        
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
         // Do any additional setup after loading the view.
     }
 

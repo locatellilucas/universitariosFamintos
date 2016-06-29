@@ -10,7 +10,7 @@
         <!--Informacao Pratos-->
         <scene sceneID="JPK-4U-Kfl">
             <objects>
-                <viewController title="Informacao Pratos" id="Gdj-ng-gh9" userLabel="Informacao Pratos" sceneMemberID="viewController">
+                <viewController title="Informacao Pratos" id="Gdj-ng-gh9" userLabel="Informacao Pratos" customClass="InformacaoPratosViewController" customModule="universitariosFamintos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gCH-Zg-9VO"/>
                         <viewControllerLayoutGuide type="bottom" id="ygK-7Q-ekj"/>
@@ -39,12 +39,12 @@
                                                                     </navigationItem>
                                                                 </items>
                                                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="102"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
                                                                 </variation>
                                                             </navigationBar>
                                                         </subviews>
                                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="0.0" width="400" height="102"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="400" height="44"/>
                                                         </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m3E-yM-CXa" userLabel="Imagem geral">
@@ -62,12 +62,12 @@
                                                             </imageView>
                                                         </subviews>
                                                         <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                            <rect key="frame" x="0.0" y="102" width="400" height="127"/>
+                                                            <rect key="frame" x="0.0" y="44" width="400" height="127"/>
                                                         </variation>
                                                     </stackView>
                                                 </subviews>
                                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="229"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="171"/>
                                                 </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="EkJ-ZM-E4g" userLabel="Descrição + comentários">
@@ -102,17 +102,17 @@
                                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                                 <textInputTraits key="textInputTraits"/>
                                                                 <variation key="widthClass=compact" ambiguous="YES">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="400" height="88"/>
                                                                 </variation>
                                                             </textField>
                                                         </subviews>
                                                         <variation key="widthClass=compact" ambiguous="YES">
-                                                            <rect key="frame" x="0.0" y="80" width="400" height="30"/>
+                                                            <rect key="frame" x="0.0" y="80" width="400" height="88"/>
                                                         </variation>
                                                     </stackView>
                                                 </subviews>
                                                 <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                    <rect key="frame" x="0.0" y="259" width="400" height="110"/>
+                                                    <rect key="frame" x="0.0" y="201" width="400" height="168"/>
                                                 </variation>
                                             </stackView>
                                         </subviews>
@@ -258,7 +258,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-mD-gau">
                                                         <rect key="frame" x="0.0" y="0.0" width="600" height="30"/>
                                                         <state key="normal" title="Adicionar ao carrinho"/>
-                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                        <variation key="widthClass=compact" ambiguous="YES">
                                                             <rect key="frame" x="0.0" y="0.0" width="400" height="30"/>
                                                         </variation>
                                                         <connections>
@@ -286,6 +286,14 @@
                             <constraint firstItem="5JX-qI-4Fl" firstAttribute="leading" secondItem="oKj-S3-Da9" secondAttribute="leadingMargin" constant="-20" id="WNc-zW-tsH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="comentariosMeusPratos" destination="hYF-Zh-V87" id="88P-Sm-GkG"/>
+                        <outlet property="descricaoPratoMeusPratos" destination="zhB-6C-aSK" id="y42-Mu-7AJ"/>
+                        <outlet property="imagemPratoMeusPratos" destination="UU2-ah-GpS" id="ClH-wi-ySH"/>
+                        <outlet property="precoTotalMeusPratos" destination="8F5-wC-q6J" id="FXJ-3k-vXY"/>
+                        <outlet property="precoUnitarioMeusPratos" destination="QKP-zR-I4d" id="gSa-Iu-yPd"/>
+                        <outlet property="valorQuantidadeMeusPratos" destination="yc5-xa-3rm" id="PZf-Qa-Y2T"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Gv-ka-buC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
