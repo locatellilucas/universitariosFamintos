@@ -185,6 +185,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="580" height="125"/>
                                                         <state key="normal" title="Adicionar ao carrinho"/>
                                                         <connections>
+                                                            <action selector="ADDCarrinhoInfoPrato:" destination="Gdj-ng-gh9" eventType="touchUpInside" id="Plb-zV-3Q4"/>
                                                             <segue destination="T4Y-tz-LTt" kind="show" identifier="SegueADDCarrinho" id="rwz-mD-Fw4"/>
                                                         </connections>
                                                     </button>
@@ -197,7 +198,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="5JX-qI-4Fl" secondAttribute="trailing" constant="-20" id="0MB-Zj-RRS">
+                            <constraint firstAttribute="trailingMargin" secondItem="5JX-qI-4Fl" secondAttribute="trailing" id="0MB-Zj-RRS">
                                 <variation key="widthClass=compact" constant="0.0"/>
                             </constraint>
                             <constraint firstItem="5JX-qI-4Fl" firstAttribute="top" secondItem="gCH-Zg-9VO" secondAttribute="bottom" id="RHv-dG-8L0"/>
@@ -583,7 +584,7 @@
                                                                 </mask>
                                                             </variation>
                                                             <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="0.0" y="0.0" width="4889" height="60"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="50" height="60"/>
                                                                 <mask key="constraints">
                                                                     <include reference="Mn5-O9-hKI"/>
                                                                     <include reference="p7a-5R-j6o"/>
@@ -599,7 +600,7 @@
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="4889" height="23"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="50" height="23"/>
                                                                     </variation>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8zB-VI-oDA" userLabel="product">
@@ -608,7 +609,7 @@
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="0.0" y="37" width="4889" height="23"/>
+                                                                        <rect key="frame" x="0.0" y="37" width="50" height="23"/>
                                                                     </variation>
                                                                 </label>
                                                             </subviews>
@@ -621,7 +622,7 @@
                                                                 </mask>
                                                             </variation>
                                                             <variation key="widthClass=compact" axis="vertical" misplaced="YES">
-                                                                <rect key="frame" x="4894" y="0.0" width="4889" height="60"/>
+                                                                <rect key="frame" x="55" y="0.0" width="50" height="60"/>
                                                                 <mask key="constraints">
                                                                     <include reference="uvs-aD-OsO"/>
                                                                 </mask>
@@ -629,7 +630,7 @@
                                                         </stackView>
                                                     </subviews>
                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                        <rect key="frame" x="0.0" y="0.0" width="9782" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="105" height="60"/>
                                                     </variation>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="5Jn-Lw-dwD">
@@ -641,7 +642,7 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="0.0" y="0.0" width="9782" height="23"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="105" height="23"/>
                                                             </variation>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flu-kc-njM" userLabel="price">
@@ -650,17 +651,17 @@
                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                             <variation key="widthClass=compact" misplaced="YES">
-                                                                <rect key="frame" x="0.0" y="37" width="9782" height="23"/>
+                                                                <rect key="frame" x="0.0" y="37" width="105" height="23"/>
                                                             </variation>
                                                         </label>
                                                     </subviews>
                                                     <variation key="widthClass=compact" axis="vertical" misplaced="YES">
-                                                        <rect key="frame" x="9910" y="0.0" width="9782" height="60"/>
+                                                        <rect key="frame" x="233" y="0.0" width="105" height="60"/>
                                                     </variation>
                                                 </stackView>
                                             </subviews>
                                             <variation key="widthClass=compact" misplaced="YES">
-                                                <rect key="frame" x="8" y="8" width="19692" height="60"/>
+                                                <rect key="frame" x="8" y="18" width="338" height="60"/>
                                             </variation>
                                         </stackView>
                                     </subviews>

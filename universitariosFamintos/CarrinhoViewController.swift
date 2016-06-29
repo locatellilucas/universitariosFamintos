@@ -9,7 +9,7 @@
 import UIKit
 
 
-class CarrinhoViewController: UIViewController, UITableViewDataSource{
+class CarrinhoViewController: UIViewController, UITableViewDataSource {
     
     
     @IBOutlet weak var tableViewCart: UITableView!
