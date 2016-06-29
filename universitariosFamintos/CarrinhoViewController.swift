@@ -21,6 +21,9 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
         super.viewDidLoad()
         
         tableViewCart.dataSource = self
+
+       
+        
         let produto: Produtos = Produtos()
         produto.nome = "Pizza"
         produto.preco = "R$5,00"
@@ -29,14 +32,22 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
         produto.restaurante = "Pizzaria Augusta"
         
         let produto2: Produtos = Produtos()
-        produto.nome = "Pizza"
-        produto.preco = "R$5,00"
-        produto.descricao = "Calabresa"
-        produto.imagem = "nada"
-        produto.restaurante = "Pizzaria Augusta"
+        produto2.nome = "Pizza"
+        produto2.preco = "R$5,00"
+        produto2.descricao = "Calabresa"
+        produto2.imagem = "nada"
+        produto2.restaurante = "Pizzaria Augusta"
+        
+        
+        
       
+        /*
         ProdutosDAO.inserir(produto)
-        ProdutosDAO.inserir(produto2)
+        ProdutosDAO.inserir(produto2)*/
+        
+        
+        
+        
         
         
                      // Do any additional setup after loading the view.
@@ -72,7 +83,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
         cell.InfoPratoCarrinho.text = produto.descricao
         cell.qtdePratoCarrinho.text = "2"
         cell.precoPratoCarrinho.text = produto.preco
-        
+                
         return cell
     }
     
@@ -85,6 +96,13 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "ShowMeusPedidos"{
+            if let viewLogin = segue.destinationViewController as? MeusPedidosViewController{
+                viewLogin.nome = "Olá, " + self.nomeTextField.text!
+                viewLogin.email = "E-mail " + self.emailTextField.text! + " cadastrado com sucesso!"
+                
+            }
+        }
     }
     */
 
