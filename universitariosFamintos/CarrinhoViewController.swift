@@ -16,41 +16,13 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
     
 
     var listaProdutos = ProdutosDAO.buscarTodosProdutos()
+    var produto: Produtos
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableViewCart.dataSource = self
 
-       
-        
-        let produto: Produtos = Produtos()
-        produto.nome = "Pizza"
-        produto.preco = "R$5,00"
-        produto.descricao = "Frango com catupiry"
-        produto.imagem = "nada"
-        produto.restaurante = "Pizzaria Augusta"
-        
-        let produto2: Produtos = Produtos()
-        produto2.nome = "Pizza"
-        produto2.preco = "R$5,00"
-        produto2.descricao = "Calabresa"
-        produto2.imagem = "nada"
-        produto2.restaurante = "Pizzaria Augusta"
-        
-        
-        
-      
-        /*
-        ProdutosDAO.inserir(produto)
-        ProdutosDAO.inserir(produto2)*/
-        
-        
-        
-        
-        
-        
-                     // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -89,7 +61,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
     
 
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -104,6 +76,6 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource{
             }
         }
     }
-    
+    */
 
 }

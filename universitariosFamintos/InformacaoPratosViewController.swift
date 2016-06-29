@@ -19,6 +19,11 @@ class InformacaoPratosViewController: UIViewController {
     
     var produto: Produtos?
     
+    @IBAction func ADDCarrinhoInfoPrato(sender: AnyObject) {
+        
+        
+        
+    }
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -58,7 +63,7 @@ class InformacaoPratosViewController: UIViewController {
      if segue.identifier == "SegueADDCarrinho"{
         if let addCarrinho = segue.destinationViewController as? CarrinhoViewController{
      
-            addCarrinho.produto = self.produto
+            addCarrinho.produto = self.produto!
      
      
         }
