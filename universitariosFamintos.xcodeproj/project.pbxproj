@@ -36,6 +36,8 @@
 		3FBB47C31D230DEE005312BA /* MeusPedidosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB47C21D230DEE005312BA /* MeusPedidosCell.swift */; };
 		3FBB47C71D230F02005312BA /* MeusPedidosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FBB47C61D230F02005312BA /* MeusPedidosViewController.swift */; };
 		3FF9BD0C1D22F2F600784E41 /* InformacaoPratosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */; };
+		DA399FC21D2426D300088981 /* RestaurantesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA399FC11D2426D300088981 /* RestaurantesTableViewController.swift */; };
+		DA399FC41D243CB600088981 /* RestaurantesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA399FC31D243CB600088981 /* RestaurantesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -70,6 +72,8 @@
 		3FBB47C21D230DEE005312BA /* MeusPedidosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusPedidosCell.swift; sourceTree = "<group>"; };
 		3FBB47C61D230F02005312BA /* MeusPedidosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeusPedidosViewController.swift; sourceTree = "<group>"; };
 		3FF9BD0B1D22F2F600784E41 /* InformacaoPratosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InformacaoPratosViewController.swift; sourceTree = "<group>"; };
+		DA399FC11D2426D300088981 /* RestaurantesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantesTableViewController.swift; sourceTree = "<group>"; };
+		DA399FC31D243CB600088981 /* RestaurantesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,7 @@
 				3FB36E561D1DCAB200119DDA /* ViewController.swift */,
 				3FA165B31D219E780016EC67 /* PratosViewController.swift */,
 				3FBB47C61D230F02005312BA /* MeusPedidosViewController.swift */,
+				DA399FC11D2426D300088981 /* RestaurantesTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 				3FBB47C21D230DEE005312BA /* MeusPedidosCell.swift */,
 				3F0DA3CD1D22E5DD00CC3C5B /* ItensCartViewCell.swift */,
 				3FA165B01D219E400016EC67 /* PratosCell.swift */,
+				DA399FC31D243CB600088981 /* RestaurantesTableViewCell.swift */,
 			);
 			name = Cell;
 			sourceTree = "<group>";
@@ -261,11 +267,13 @@
 				3F77AA971D23070E00C3CA28 /* PedidosDAO.swift in Sources */,
 				3F77AA9D1D23084200C3CA28 /* ProdutosPedidosDAO.swift in Sources */,
 				3FBB47C31D230DEE005312BA /* MeusPedidosCell.swift in Sources */,
+				DA399FC41D243CB600088981 /* RestaurantesTableViewCell.swift in Sources */,
 				3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */,
 				3F0DA3E41D22F52300CC3C5B /* Restaurantes+CoreDataProperties.swift in Sources */,
 				3F77AA991D23074400C3CA28 /* RestaurantesDAO.swift in Sources */,
 				3F0DA3E61D22F52300CC3C5B /* Produtos+CoreDataProperties.swift in Sources */,
 				3F77AA951D23060800C3CA28 /* ProdutosDAO.swift in Sources */,
+				DA399FC21D2426D300088981 /* RestaurantesTableViewController.swift in Sources */,
 				3F0DA3E51D22F52300CC3C5B /* Restaurantes.swift in Sources */,
 				3FBB47C11D230AF3005312BA /* LoginViewController.swift in Sources */,
 				3F0DA3E31D22F52300CC3C5B /* ProdutosPedidos.swift in Sources */,
