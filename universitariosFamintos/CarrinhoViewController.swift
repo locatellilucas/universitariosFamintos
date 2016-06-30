@@ -24,7 +24,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         tableViewCart.dataSource = self
-        //listaProdutos.append(tempProduto!)
+        listaProdutos.append(tempProduto!)
 
     }
 
@@ -72,15 +72,12 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier == "PedidosFinalizar"{
-            if let pedidosController = segue.destinationViewController as? MeusPedidosViewController{
                 pedido.restaurante = self.produto.restaurante
                 pedido.produtos = NSSet(array: self.listaProdutos)
                 
                 PedidosDAO.inserir(pedido)
                 
-                pedidosController.listaPedidos = PedidosDAO.buscarTodosPedidos()
-                
-            }
+            
         }
     }
     

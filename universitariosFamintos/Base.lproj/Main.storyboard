@@ -518,10 +518,15 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" title="Carrinho" id="18e-l4-cpx"/>
+                    <navigationItem key="navigationItem" title="Carrinho" id="18e-l4-cpx">
+                        <barButtonItem key="rightBarButtonItem" title="Finalizar" id="Sla-gB-j0A">
+                            <connections>
+                                <segue destination="qdn-Dg-LcK" kind="show" identifier="PedidosFinalizar" id="C1S-rU-eHu"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableViewCart" destination="DHN-MX-am3" id="CTz-v6-cmq"/>
-                        <segue destination="qdn-Dg-LcK" kind="show" identifier="PedidosFinalizar" id="yce-kC-CgK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZF-nA-rCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1182,6 +1187,6 @@
         <image name="restaurant" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yce-kC-CgK"/>
+        <segue reference="C1S-rU-eHu"/>
     </inferredMetricsTieBreakers>
 </document>

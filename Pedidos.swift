@@ -11,8 +11,8 @@ import CoreData
 import UIKit
 
 class Pedidos: NSManagedObject {
-
-// Insert code here to add functionality to your managed object subclass
+    
+    // Insert code here to add functionality to your managed object subclass
     convenience init() {
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         
