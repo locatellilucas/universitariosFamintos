@@ -23,7 +23,7 @@ class RestaurantesTableViewController: UITableViewController {
         
         /*
         let rest1: Restaurantes = Restaurantes()
-        rest1.nome = "Pizzaria do Bob"
+        rest1.nome = "Pizza Hut"
         rest1.categoria = "Pizzaria"
         rest1.descricao = "Pizzaria que existe desde 30 anos"
         rest1.local = "Bloco Azul"
@@ -103,7 +103,6 @@ class RestaurantesTableViewController: UITableViewController {
         cell.restauranteNomeLabel.text = restaurante.nome
         cell.restauranteTipoLabel.text = restaurante.categoria
 
-        
         
         return cell
     }
