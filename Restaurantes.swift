@@ -2,14 +2,13 @@
 //  Restaurantes.swift
 //  universitariosFamintos
 //
-//  Created by Student on 6/28/16.
+//  Created by Student on 6/30/16.
 //  Copyright © 2016 Chamer. All rights reserved.
 //
 
 import Foundation
 import CoreData
 import UIKit
-
 
 class Restaurantes: NSManagedObject {
 
@@ -21,5 +20,4 @@ class Restaurantes: NSManagedObject {
         
         self.init(entity: entityDescription, insertIntoManagedObjectContext: context)
     }
-
 }
