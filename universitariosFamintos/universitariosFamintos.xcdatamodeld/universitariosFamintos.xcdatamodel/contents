@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
     <entity name="Pedidos" representedClassName=".Pedidos" syncable="YES">
-        <relationship name="produtos" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Produtos" syncable="YES"/>
-        <relationship name="restaurante" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Restaurantes" syncable="YES"/>
-        <relationship name="usuario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuarios" syncable="YES"/>
+        <relationship name="produtos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Produtos" inverseName="pedidos" inverseEntity="Produtos" syncable="YES"/>
+        <relationship name="restaurante" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Restaurantes" inverseName="pedido" inverseEntity="Restaurantes" syncable="YES"/>
+        <relationship name="usuario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Usuarios" inverseName="pedidoUsuario" inverseEntity="Usuarios" syncable="YES"/>
     </entity>
     <entity name="Produtos" representedClassName=".Produtos" syncable="YES">
         <attribute name="descricao" optional="YES" attributeType="String" syncable="YES"/>
@@ -11,6 +11,7 @@
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="preco" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="restaurante" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pedidos" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pedidos" inverseName="produtos" inverseEntity="Pedidos" syncable="YES"/>
     </entity>
     <entity name="ProdutosPedidos" syncable="YES">
         <attribute name="numPedido" optional="YES" attributeType="Integer 16" defaultValueString="0.0" syncable="YES"/>
@@ -23,17 +24,19 @@
         <attribute name="imagem" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="local" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pedido" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pedidos" inverseName="restaurante" inverseEntity="Pedidos" syncable="YES"/>
     </entity>
     <entity name="Usuarios" representedClassName=".Usuarios" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="nome" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="senha" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pedidoUsuario" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Pedidos" inverseName="usuario" inverseEntity="Pedidos" syncable="YES"/>
     </entity>
     <elements>
         <element name="Pedidos" positionX="-189" positionY="36" width="128" height="88"/>
-        <element name="Produtos" positionX="-182" positionY="-126" width="128" height="120"/>
+        <element name="Produtos" positionX="-182" positionY="-126" width="128" height="133"/>
         <element name="ProdutosPedidos" positionX="-198" positionY="135" width="128" height="88"/>
-        <element name="Restaurantes" positionX="43" positionY="-82" width="128" height="118"/>
-        <element name="Usuarios" positionX="45" positionY="54" width="128" height="90"/>
+        <element name="Restaurantes" positionX="43" positionY="-82" width="128" height="133"/>
+        <element name="Usuarios" positionX="45" positionY="54" width="128" height="103"/>
     </elements>
 </model>
