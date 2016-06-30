@@ -10,6 +10,14 @@ import UIKit
 
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
 
+    var cad: [Usuarios] = [Usuarios]()
+    
+    func messagebox(titulo: String, mensagem: String) {
+        let alert = UIAlertController(title: titulo, message: mensagem, preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "Descartar", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+    
     @IBOutlet weak var senha: UITextField!
     
     @IBOutlet weak var email: UITextField!
@@ -23,12 +31,28 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     @IBOutlet weak var signupButton: UIButton!
     
     @IBAction func Login(sender: AnyObject) {
-        if ((senha.text != "") && email.text != ""){
-            let alert = UIAlertController(title:"Login realizado com sucesso!", message:"logado como: \(email.text)", preferredStyle:UIAlertControllerStyle.Alert)
+        let emailtexto = email.text
+        let senhatexto = senha.text
+        if ((senhatexto != "") && senhatexto != ""){
+            messagebox("Login realizado com sucesso!", mensagem: "logado como: \(emailtexto)")
+        }
+        else {
+            messagebox("Tente novamente", mensagem:"Preencha corretamente os campos 'email' e 'senha'")
+        }
+    }
+    
+    @IBAction func SignUp(sender: AnyObject) {
         
-            alert.addAction(UIAlertAction(title:"Descartar",style: UIAlertActionStyle.Default, handler:nil))
-        
-            self.presentViewController(alert, animated:true, completion:nil)
+        let emailtexto = email.text
+        let senhatexto = senha.text
+        if ((senhatexto != "") && senhatexto != ""){
+            let cad1: Usuarios = Usuarios()
+            cad1.email = emailtexto
+            cad1.senha = senhatexto
+            UsuariosDAO.inserir(cad1)
+        }
+        else {
+            messagebox("Tente novamente", mensagem:"Preencha corretamente os campos 'email' e 'senha'")
         }
     }
     
@@ -64,11 +88,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
             
             nome = "\(firstName!) \(lastName!)"
             
-            let alert = UIAlertController(title:"Login realizado com sucesso!", message:"logado como: \(nome)", preferredStyle:UIAlertControllerStyle.Alert)
-            
-            alert.addAction(UIAlertAction(title:"Descartar",style: UIAlertActionStyle.Default, handler:nil))
-            
-            self.presentViewController(alert, animated:true, completion:nil)
+            self.messagebox("Login realizado com sucesso!", mensagem:"logado como: \(nome)")
         })
     }
     
@@ -77,6 +97,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }
     
     func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+        messagebox("Logoff realizado com sucesso", mensagem: "")
     }
     
     func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
