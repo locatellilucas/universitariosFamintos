@@ -28,7 +28,7 @@ class RestaurantesDAO{
         
     }
     
-    static func buscarTodosContatos() -> [Restaurantes] {
+    static func buscarTodosRestaurantes() -> [Restaurantes] {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = appDelegate.managedObjectContext
         

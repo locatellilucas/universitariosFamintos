@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Gdj-ng-gh9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ulr-0I-LCw">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -215,6 +215,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Descricao Prato" id="9Zu-HY-zg4"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="descricaoPratoMeusPratos" destination="zhB-6C-aSK" id="0YX-y4-sV9"/>
+                        <outlet property="imagemPratoMeusPratos" destination="UU2-ah-GpS" id="fGF-rL-GhN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Gv-ka-buC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -292,7 +297,7 @@
                                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                             <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="21"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="21"/>
                                                                             </variation>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="informacoes" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TcQ-kn-UJU">
@@ -301,7 +306,7 @@
                                                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                             <nil key="highlightedColor"/>
                                                                             <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="21" width="172" height="21"/>
+                                                                                <rect key="frame" x="0.0" y="21" width="179" height="21"/>
                                                                             </variation>
                                                                         </label>
                                                                     </subviews>
@@ -314,7 +319,7 @@
                                                                         </mask>
                                                                     </variation>
                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="41"/>
+                                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="41"/>
                                                                         <mask key="constraints">
                                                                             <exclude reference="i8i-Xv-fMC"/>
                                                                         </mask>
@@ -332,7 +337,7 @@
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="86" height="21"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="90" height="21"/>
                                                                                     </variation>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="qtde" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="359-V2-at6">
@@ -341,12 +346,12 @@
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                                        <rect key="frame" x="86" y="0.0" width="86" height="21"/>
+                                                                                        <rect key="frame" x="90" y="0.0" width="90" height="21"/>
                                                                                     </variation>
                                                                                 </label>
                                                                             </subviews>
                                                                             <variation key="widthClass=compact" axis="horizontal" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="0.0" width="172" height="21"/>
+                                                                                <rect key="frame" x="0.0" y="0.0" width="179" height="21"/>
                                                                             </variation>
                                                                         </stackView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="u0a-Eg-QgB">
@@ -357,8 +362,14 @@
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
+                                                                                    <variation key="widthClass=compact" misplaced="YES">
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="179" height="21"/>
+                                                                                    </variation>
                                                                                 </label>
                                                                             </subviews>
+                                                                            <variation key="widthClass=compact" misplaced="YES">
+                                                                                <rect key="frame" x="0.0" y="21" width="179" height="21"/>
+                                                                            </variation>
                                                                         </stackView>
                                                                     </subviews>
                                                                     <constraints>
@@ -383,7 +394,7 @@
                                                                         </mask>
                                                                     </variation>
                                                                     <variation key="widthClass=compact" misplaced="YES">
-                                                                        <rect key="frame" x="172" y="0.0" width="172" height="41"/>
+                                                                        <rect key="frame" x="179" y="0.0" width="179" height="41"/>
                                                                         <mask key="subviews">
                                                                             <include reference="u0a-Eg-QgB"/>
                                                                         </mask>
@@ -398,7 +409,9 @@
                                                                     </variation>
                                                                 </stackView>
                                                             </subviews>
-                                                            <variation key="widthClass=compact" alignment="top"/>
+                                                            <variation key="widthClass=compact" alignment="top" misplaced="YES">
+                                                                <rect key="frame" x="28" y="8" width="358" height="44"/>
+                                                            </variation>
                                                         </stackView>
                                                     </subviews>
                                                     <constraints>
@@ -768,7 +781,7 @@
                                     <outlet property="restauranteImage" destination="kmq-mK-Q8M" id="84i-AX-zsO"/>
                                     <outlet property="restauranteNomeLabel" destination="HRI-5t-CVu" id="sTu-x3-MWq"/>
                                     <outlet property="restauranteTipoLabel" destination="hzJ-sN-fhq" id="qDF-F8-Xe9"/>
-                                    <segue destination="oB3-Bg-ITa" kind="show" id="XkO-64-Eln"/>
+                                    <segue destination="oB3-Bg-ITa" kind="show" identifier="SegueRestaurantes" id="XkO-64-Eln"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>

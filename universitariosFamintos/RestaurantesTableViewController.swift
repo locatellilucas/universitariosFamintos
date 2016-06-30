@@ -8,27 +8,12 @@
 
 import UIKit
 
-class Restaurante {
-    
-    var img: String
-    var nome: String
-    var tipo: String
-    
-    init(img: String, nome: String, tipo: String) {
-        
-        self.img = img
-        self.nome = nome
-        self.tipo = tipo
-        
-    }
-    
-}
-
 class RestaurantesTableViewController: UITableViewController {
     
     @IBOutlet var restaurantesTableView: UITableView!
     
-    var restaurantes: [Restaurante] = [Restaurante]()
+    var restaurante: [Restaurantes] = [Restaurantes]()
+    var listaRestaurantes = RestaurantesDAO.buscarTodosRestaurantes()
     
 
     override func viewDidLoad() {
@@ -36,11 +21,24 @@ class RestaurantesTableViewController: UITableViewController {
 
         restaurantesTableView.dataSource = self
         
-        let restaurante1 = Restaurante(img: "pizza", nome: "Pizzaria do Bob", tipo: "Pizzas e massas")
-        let restaurante2 = Restaurante(img: "paoqueijo", nome: "Padaria do Bob", tipo: "Padaria")
+        /*let rest1: Restaurantes = Restaurantes()
+        rest1.nome = "Pizzaria do Bob"
+        rest1.categoria = "Pizzaria"
+        rest1.descricao = "Pizzaria que existe desde 30 anos"
+        rest1.local = "Bloco Azul"
+
         
-        self.restaurantes.append(restaurante1)
-        self.restaurantes.append(restaurante2)
+         
+        let rest2: Restaurantes = Restaurantes()
+        rest2.nome = "Padaria do Bob"
+        rest2.categoria = "Padaria"
+        rest2.descricao = "Padaria que existe desde 30 anos"
+        rest2.local = "Bloco Verde"
+         
+         
+         RestaurantesDAO.inserir(rest1)
+         RestaurantesDAO.inserir(rest2)*/
+
         
     }
 
@@ -58,23 +56,18 @@ class RestaurantesTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.restaurantes.count
+        return self.listaRestaurantes.count
     }
     
     
-    
-    
-    
-
-
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("restaurantesIdentifier", forIndexPath: indexPath) as! RestaurantesTableViewCell
         
-        let restaurante = self.restaurantes[indexPath.row]
+        let restaurante = self.listaRestaurantes[indexPath.row]
         
-        cell.restauranteImage.image = UIImage(contentsOfFile: restaurante.img)
+        //cell.restauranteImage.image = UIImage(contentsOfFile: )
         cell.restauranteNomeLabel.text = restaurante.nome
-        cell.restauranteTipoLabel.text = restaurante.tipo
+        cell.restauranteTipoLabel.text = restaurante.categoria
 
         
         
@@ -116,14 +109,22 @@ class RestaurantesTableViewController: UITableViewController {
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "SegueRestaurantes"{
+            if let pratos = segue.destinationViewController as? PratosViewController{
+                
+                pratos.restaurante = self.listaRestaurantes[(restaurantesTableView.indexPathForSelectedRow?.row)!]
+                
+                
+            }
+        }
     }
-    */
+    
 
 }

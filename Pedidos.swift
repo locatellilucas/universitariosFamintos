@@ -2,7 +2,7 @@
 //  Pedidos.swift
 //  universitariosFamintos
 //
-//  Created by Student on 6/28/16.
+//  Created by Student on 6/30/16.
 //  Copyright © 2016 Chamer. All rights reserved.
 //
 
@@ -13,7 +13,6 @@ import UIKit
 class Pedidos: NSManagedObject {
 
 // Insert code here to add functionality to your managed object subclass
-    
     convenience init() {
         let context = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         
@@ -21,6 +20,4 @@ class Pedidos: NSManagedObject {
         
         self.init(entity: entityDescription, insertIntoManagedObjectContext: context)
     }
-    
-
 }

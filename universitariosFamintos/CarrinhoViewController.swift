@@ -68,7 +68,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "ShowMeusPedidos"{
+        if segue.identifier == "Pedidos"{
             if let viewLogin = segue.destinationViewController as? MeusPedidosViewController{
                 viewLogin.nome = "Olá, " + self.nomeTextField.text!
                 viewLogin.email = "E-mail " + self.emailTextField.text! + " cadastrado com sucesso!"

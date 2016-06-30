@@ -29,7 +29,8 @@ class PratosViewController: UIViewController , UITableViewDataSource{
 
     @IBOutlet weak var tableviewPrato: UITableView!
     
-    //var pratos: [Pratos] = [Pratos]()
+    var restaurante: Restaurantes?
+    
     var produto: [Produtos] = [Produtos]()
     var listaProdutos = ProdutosDAO.buscarTodosProdutos()
     
@@ -38,50 +39,42 @@ class PratosViewController: UIViewController , UITableViewDataSource{
         super.viewDidLoad()
         
         tableviewPrato.dataSource = self
-        /*
-        let prato1 = Pratos(produto: "Pizza", qtd: 1, preco: "R$ 12,00", img: "pizza")
-        let prato2 = Pratos(produto: "Pao de queijo", qtd: 1, preco: "R$ 3,50", img: "paoqueijo")
-        let prato3 = Pratos(produto: "Crepe", qtd: 1, preco: "R$ 3,00", img: "crepe")
+
         
-        self.pratos.append(prato1)
-        self.pratos.append(prato2)
-        self.pratos.append(prato3)
-*/
-        /*
         let produto: Produtos = Produtos()
         produto.nome = "Pizza Frango com catupiry"
         produto.preco = "R$5,00"
         produto.descricao = "Frango desfiado, queijo do tipo catupiry e queijo mussarela"
         produto.imagem = "nada"
-        produto.restaurante = "Pizzaria Augusta"
+        produto.restaurante = restaurante
         
         let produto2: Produtos = Produtos()
         produto2.nome = "Pizza Calabresa"
         produto2.preco = "R$5,00"
         produto2.descricao = "Calabresa fatiada e frita, queijo mussarela e azeitona"
         produto2.imagem = "nada"
-        produto2.restaurante = "Pizzaria Augusta"
+        produto.restaurante = restaurante
         
         let produto3: Produtos = Produtos()
         produto3.nome = "Pizza Portuguesa"
         produto3.preco = "R$5,00"
         produto3.descricao = "Presunto, queijo mussarela, ovo e oregano"
         produto3.imagem = "nada"
-        produto3.restaurante = "Pizzaria Augusta"
+        produto.restaurante = restaurante
         
         let produto4: Produtos = Produtos()
         produto4.nome = "Pizza Atum"
         produto4.preco = "R$5,00"
         produto4.descricao = "Atum, queijo mussarela e azeitona preta"
         produto4.imagem = "nada"
-        produto4.restaurante = "Pizzaria Augusta"
+        produto.restaurante = restaurante
  
         
         
         ProdutosDAO.inserir(produto)
         ProdutosDAO.inserir(produto2)
         ProdutosDAO.inserir(produto3)
-        ProdutosDAO.inserir(produto4)*/
+        ProdutosDAO.inserir(produto4)
       
  
         // Uncomment the following line to preserve selection between presentations
@@ -117,16 +110,7 @@ class PratosViewController: UIViewController , UITableViewDataSource{
         cell.qtd.text = "2"
         cell.price.text = prato.preco
         
-
-        /*let spider = self.spiders[indexPath.row]
         
-        cell.spiderImage.image = UIImage(named: spider.imageName)
-        cell.name.text = spider.name
-        cell.year.text = spider.year
-        
-        return cell
-        // Configure the cell...*/
-
         return cell
     }
 
