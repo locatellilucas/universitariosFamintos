@@ -24,6 +24,7 @@
 		3F77AA991D23074400C3CA28 /* RestaurantesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77AA981D23074400C3CA28 /* RestaurantesDAO.swift */; };
 		3F77AA9B1D2307F500C3CA28 /* UsuariosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77AA9A1D2307F500C3CA28 /* UsuariosDAO.swift */; };
 		3F77AA9D1D23084200C3CA28 /* ProdutosPedidosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77AA9C1D23084200C3CA28 /* ProdutosPedidosDAO.swift */; };
+		3F9890461D25956D007A9C2F /* facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9890451D25956D007A9C2F /* facebook.m */; };
 		3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA165B01D219E400016EC67 /* PratosCell.swift */; };
 		3FA165B41D219E780016EC67 /* PratosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA165B31D219E780016EC67 /* PratosViewController.swift */; };
 		3FB153C41D245FED009D0DD7 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FB153C21D245FED009D0DD7 /* FBSDKCoreKit.framework */; };
@@ -60,6 +61,8 @@
 		3F77AA981D23074400C3CA28 /* RestaurantesDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantesDAO.swift; sourceTree = "<group>"; };
 		3F77AA9A1D2307F500C3CA28 /* UsuariosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuariosDAO.swift; sourceTree = "<group>"; };
 		3F77AA9C1D23084200C3CA28 /* ProdutosPedidosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdutosPedidosDAO.swift; sourceTree = "<group>"; };
+		3F9890441D25956C007A9C2F /* universitariosFamintos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "universitariosFamintos-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		3F9890451D25956D007A9C2F /* facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = facebook.m; sourceTree = "<group>"; };
 		3FA165B01D219E400016EC67 /* PratosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PratosCell.swift; sourceTree = "<group>"; };
 		3FA165B31D219E780016EC67 /* PratosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PratosViewController.swift; sourceTree = "<group>"; };
 		3FB153C21D245FED009D0DD7 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKCoreKit.framework; path = "../../../Downloads/FacebookSDKs-iOS-4/FBSDKCoreKit.framework"; sourceTree = "<group>"; };
@@ -177,6 +180,7 @@
 		3FB36E481D1DCAB200119DDA = {
 			isa = PBXGroup;
 			children = (
+				3F9890451D25956D007A9C2F /* facebook.m */,
 				3FB36E531D1DCAB200119DDA /* universitariosFamintos */,
 				3FB36E521D1DCAB200119DDA /* Products */,
 			);
@@ -202,6 +206,7 @@
 				3FA165B21D219E4C0016EC67 /* Cell */,
 				3FB36E631D1DCAB200119DDA /* Info.plist */,
 				3FB36E5B1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld */,
+				3F9890441D25956C007A9C2F /* universitariosFamintos-Bridging-Header.h */,
 			);
 			path = universitariosFamintos;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 				3F0DA3DE1D22F52300CC3C5B /* Pedidos+CoreDataProperties.swift in Sources */,
 				3FB36E5D1D1DCAB200119DDA /* universitariosFamintos.xcdatamodeld in Sources */,
 				3F77AA9B1D2307F500C3CA28 /* UsuariosDAO.swift in Sources */,
+				3F9890461D25956D007A9C2F /* facebook.m in Sources */,
 				3F0DA3CE1D22E5DD00CC3C5B /* CarrinhoViewController.swift in Sources */,
 				3FF9BD0C1D22F2F600784E41 /* InformacaoPratosViewController.swift in Sources */,
 				3FBB47C71D230F02005312BA /* MeusPedidosViewController.swift in Sources */,
@@ -419,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/universitariosFamintos",
@@ -427,6 +434,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chamer.com.br.universitariosFamintos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "universitariosFamintos-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -434,6 +443,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/universitariosFamintos",
@@ -442,6 +452,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = chamer.com.br.universitariosFamintos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "universitariosFamintos-Bridging-Header.h";
 			};
 			name = Release;
 		};
