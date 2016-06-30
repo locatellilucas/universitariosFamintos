@@ -26,14 +26,46 @@ class RestaurantesTableViewController: UITableViewController {
         rest1.categoria = "Pizzaria"
         rest1.descricao = "Pizzaria que existe desde 30 anos"
         rest1.local = "Bloco Azul"
-
-        
          
         let rest2: Restaurantes = Restaurantes()
         rest2.nome = "Padaria do Bob"
         rest2.categoria = "Padaria"
         rest2.descricao = "Padaria que existe desde 30 anos"
         rest2.local = "Bloco Verde"
+         
+         
+         let produto: Produtos = Produtos()
+         produto.nome = "Pizza Frango com catupiry"
+         produto.preco = "R$5,00"
+         produto.descricao = "Frango desfiado, queijo do tipo catupiry e queijo mussarela"
+         produto.imagem = "nada"
+         produto.restaurante = rest1
+         
+         let produto2: Produtos = Produtos()
+         produto2.nome = "Pizza Calabresa"
+         produto2.preco = "R$5,00"
+         produto2.descricao = "Calabresa fatiada e frita, queijo mussarela e azeitona"
+         produto2.imagem = "nada"
+         produto.restaurante = rest1
+         
+         let produto3: Produtos = Produtos()
+         produto3.nome = "Pizza Portuguesa"
+         produto3.preco = "R$5,00"
+         produto3.descricao = "Presunto, queijo mussarela, ovo e oregano"
+         produto3.imagem = "nada"
+         produto.restaurante = rest1
+         
+         let produto4: Produtos = Produtos()
+         produto4.nome = "Pizza Atum"
+         produto4.preco = "R$5,00"
+         produto4.descricao = "Atum, queijo mussarela e azeitona preta"
+         produto4.imagem = "nada"
+         produto.restaurante = rest1
+         
+         ProdutosDAO.inserir(produto)
+         ProdutosDAO.inserir(produto2)
+         ProdutosDAO.inserir(produto3)
+         ProdutosDAO.inserir(produto4)
          
          
          RestaurantesDAO.inserir(rest1)

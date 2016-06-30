@@ -31,8 +31,7 @@ class PratosViewController: UIViewController , UITableViewDataSource{
     
     var restaurante: Restaurantes?
     
-    var produto: [Produtos] = [Produtos]()
-    var listaProdutos = ProdutosDAO.buscarTodosProdutos()
+    var listaProdutos: [Produtos] = [Produtos]()
     
     
     override func viewDidLoad() {
@@ -40,7 +39,8 @@ class PratosViewController: UIViewController , UITableViewDataSource{
         
         tableviewPrato.dataSource = self
 
-        
+        listaProdutos = ProdutosDAO.buscarTodosProdutos(restaurante!)
+        /*
         let produto: Produtos = Produtos()
         produto.nome = "Pizza Frango com catupiry"
         produto.preco = "R$5,00"
@@ -69,12 +69,11 @@ class PratosViewController: UIViewController , UITableViewDataSource{
         produto4.imagem = "nada"
         produto.restaurante = restaurante
  
-        
-        
         ProdutosDAO.inserir(produto)
         ProdutosDAO.inserir(produto2)
         ProdutosDAO.inserir(produto3)
         ProdutosDAO.inserir(produto4)
+ */
       
  
         // Uncomment the following line to preserve selection between presentations
@@ -98,6 +97,7 @@ class PratosViewController: UIViewController , UITableViewDataSource{
 
      func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        
         return self.listaProdutos.count
     }
 

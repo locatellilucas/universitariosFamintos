@@ -8,6 +8,7 @@
 
 import UIKit
 
+/*
 class MeusPedidos {
     var cod: Int
     var order: String
@@ -22,22 +23,19 @@ class MeusPedidos {
         self.estabelecimento = estabelecimento
         self.img = img
     }
-}
+}*/
 
 class MeusPedidosViewController: UITableViewController {
 
-    var pedidos: [MeusPedidos] = [MeusPedidos]()
+    //var pedidos: [MeusPedidos] = [MeusPedidos]()
+    
+    var restaurante: Restaurantes?
+    
+    var pedido: [Pedidos] = [Pedidos]()
+    var listaPedidos = PedidosDAO.buscarTodosPedidos()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let pedido1 = MeusPedidos(cod: 3304, order: "Pizza Calabresa", price: "R$ 12,00", estabelecimento: "Pizzaria Augusta", img: "")
-        let pedido2 = MeusPedidos(cod: 3333, order: "Pao de Queijo", price: "R$ 3,00", estabelecimento: "Pao de Queijaria", img: "")
-        let pedido3 = MeusPedidos(cod: 2222, order: "Crepes", price: "R$ 3,50", estabelecimento: "creparia", img: "")
-        
-        pedidos.append(pedido1)
-        pedidos.append(pedido2)
-        pedidos.append(pedido3)
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -60,19 +58,19 @@ class MeusPedidosViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.pedidos.count
+        return self.listaPedidos.count
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("meuspedidosIdentifier", forIndexPath: indexPath) as! MeusPedidosCell
         
-        let pedido = self.pedidos[indexPath.row]
+        let pedido = self.listaPedidos[indexPath.row]
         
-        cell.estabelecimento.text = pedido.estabelecimento
-        cell.nOrder.text = String(pedido.cod)
-        cell.product.text = pedido.order
-        cell.price.text = pedido.price
-        cell.imageOrder.image = UIImage(named: pedido.img)
+        cell.estabelecimento.text = pedido.restaurante?.nome
+        cell.nOrder.text = String(pedido.objectID)
+        //cell.product.text = pedido.produtos.
+        //cell.price.text = pedido.produtos.
+        //cell.imageOrder.image = UIImage(named: pedido.img)
 
         // Configure the cell...
 

@@ -13,10 +13,9 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
     
     
     @IBOutlet weak var tableViewCart: UITableView!
-    
-
-    var listaProdutos = ProdutosDAO.buscarTodosProdutos()
-    var produto: Produtos?
+        
+    var produto: Produtos = Produtos()
+    var listaProdutos: [Produtos] = [Produtos]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,14 +60,14 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
     
 
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-        if segue.identifier == "Pedidos"{
+        if segue.identifier == "PedidosFinalizar"{
             if let viewLogin = segue.destinationViewController as? MeusPedidosViewController{
                 viewLogin.nome = "Olá, " + self.nomeTextField.text!
                 viewLogin.email = "E-mail " + self.emailTextField.text! + " cadastrado com sucesso!"
@@ -76,6 +75,6 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
             }
         }
     }
-    */
+    
 
 }
