@@ -21,7 +21,8 @@ class RestaurantesTableViewController: UITableViewController {
 
         restaurantesTableView.dataSource = self
         
-        /*let rest1: Restaurantes = Restaurantes()
+        /*
+        let rest1: Restaurantes = Restaurantes()
         rest1.nome = "Pizzaria do Bob"
         rest1.categoria = "Pizzaria"
         rest1.descricao = "Pizzaria que existe desde 30 anos"
@@ -62,14 +63,15 @@ class RestaurantesTableViewController: UITableViewController {
          produto4.imagem = "nada"
          produto.restaurante = rest1
          
+        RestaurantesDAO.inserir(rest1)
+        RestaurantesDAO.inserir(rest2)
          ProdutosDAO.inserir(produto)
          ProdutosDAO.inserir(produto2)
          ProdutosDAO.inserir(produto3)
-         ProdutosDAO.inserir(produto4)
+         ProdutosDAO.inserir(produto4)*/
          
          
-         RestaurantesDAO.inserir(rest1)
-         RestaurantesDAO.inserir(rest2)*/
+ 
 
         
     }

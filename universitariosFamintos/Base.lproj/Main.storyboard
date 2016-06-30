@@ -510,11 +510,12 @@
                     <navigationItem key="navigationItem" title="Carrinho" id="18e-l4-cpx"/>
                     <connections>
                         <outlet property="tableViewCart" destination="DHN-MX-am3" id="CTz-v6-cmq"/>
+                        <segue destination="qdn-Dg-LcK" kind="show" identifier="PedidosFinalizar" id="yce-kC-CgK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dZF-nA-rCn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4089" y="-133"/>
+            <point key="canvasLocation" x="4128" y="-105"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5OQ-XX-dpi">
@@ -710,7 +711,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c6N-hX-sxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3135" y="707"/>
+            <point key="canvasLocation" x="3123" y="857"/>
         </scene>
         <!--Restaurantes-->
         <scene sceneID="33c-za-M9u">
@@ -1220,4 +1221,7 @@
         <image name="purchase_order" width="24" height="24"/>
         <image name="restaurant" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="yce-kC-CgK"/>
+    </inferredMetricsTieBreakers>
 </document>
