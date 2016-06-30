@@ -17,6 +17,16 @@ class InformacaoPratosViewController: UIViewController {
     @IBOutlet weak var valorQuantidadeMeusPratos: UILabel!
     @IBOutlet weak var precoTotalMeusPratos: UILabel!
     
+    @IBOutlet weak var qtde: UILabel!
+    
+    @IBOutlet weak var stepper: UIStepper!
+    
+    @IBAction func stepperValueChanged(sender: UIStepper) {
+        qtde.text = Int(sender.value).description
+    }
+    
+    
+    
     var produto: Produtos?
     
    
@@ -30,6 +40,10 @@ class InformacaoPratosViewController: UIViewController {
 
         self.descricaoPratoMeusPratos.text = produto?.nome
         self.precoUnitarioMeusPratos.text = produto?.preco
+        
+        stepper.wraps = true
+        stepper.autorepeat = true
+        stepper.maximumValue = 1000
         
        // let precoUnit = Double(self.precoUnitarioMeusPratos.text!)
         //let qtde = Double(self.valorQuantidadeMeusPratos.text!)
