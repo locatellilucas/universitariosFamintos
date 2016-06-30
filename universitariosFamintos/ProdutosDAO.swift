@@ -28,13 +28,13 @@ class ProdutosDAO{
         
     }
     
-    static func buscarTodosProdutos() -> [Produtos] {
+    static func buscarTodosProdutos(restaurante: Restaurantes) -> [Produtos] {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = appDelegate.managedObjectContext
         
         var listaProdutos: [Produtos] = [Produtos]()
         let request: NSFetchRequest = NSFetchRequest(entityName: "Produtos")
-        request.sortDescriptors = [NSSortDescriptor(key:"nome", ascending: true)]
+        request.predicate = NSPredicate(format: "restaurante == %@", restaurante)
         do{
             listaProdutos = try context.executeFetchRequest(request) as! [Produtos]
             print("Total de produtos: ", listaProdutos.count)

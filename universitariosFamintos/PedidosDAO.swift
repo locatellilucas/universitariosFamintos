@@ -28,13 +28,14 @@ class PedidosDAO{
         
     }
     
-    static func buscarTodosContatos() -> [Pedidos] {
+    static func buscarTodosPedidos() -> [Pedidos] {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let context = appDelegate.managedObjectContext
         
         var listaPedidos: [Pedidos] = [Pedidos]()
         let request: NSFetchRequest = NSFetchRequest(entityName: "Pedidos")
         request.sortDescriptors = [NSSortDescriptor(key:"nome", ascending: true)]
+        
         do{
             listaPedidos = try context.executeFetchRequest(request) as! [Pedidos]
             print("Total de pedidos: ", listaPedidos.count)
