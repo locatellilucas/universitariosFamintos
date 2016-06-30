@@ -31,6 +31,7 @@ class MeusPedidosViewController: UITableViewController {
     
     var restaurante: Restaurantes?
     
+    var pedido: Pedidos?
     var listaPedidos: [Pedidos] = [Pedidos]()
     
     
@@ -41,6 +42,8 @@ class MeusPedidosViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        listaPedidos = PedidosDAO.buscarTodosPedidos()
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,9 +69,9 @@ class MeusPedidosViewController: UITableViewController {
         let pedido = self.listaPedidos[indexPath.row]
         
         cell.estabelecimento.text = pedido.restaurante?.nome
-        cell.nOrder.text = String(pedido.objectID)
-        //cell.product.text = pedido.produtos.
-        //cell.price.text = pedido.produtos.
+        cell.nOrder.text = String(pedido.numPedido)
+        cell.product.text = String(pedido.produtos?.count)
+        cell.price.text = pedido.precoTotal
         //cell.imageOrder.image = UIImage(named: pedido.img)
 
         // Configure the cell...

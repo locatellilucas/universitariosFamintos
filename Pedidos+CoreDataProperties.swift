@@ -14,6 +14,8 @@ import CoreData
 
 extension Pedidos {
 
+    @NSManaged var numPedido: NSNumber?
+    @NSManaged var precoTotal: String?
     @NSManaged var produtos: NSSet?
     @NSManaged var restaurante: Restaurantes?
     @NSManaged var usuario: Usuarios?

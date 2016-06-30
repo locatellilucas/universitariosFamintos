@@ -8,6 +8,13 @@
 
 import UIKit
 
+func random() -> Int {
+    return Int(Int(arc4random()) / 0xFFFFFFFF)
+}
+
+func random(min min: Int, max: Int) -> Int {
+    return random() * (max - min) + min
+}
 
 class CarrinhoViewController: UIViewController, UITableViewDataSource {
     
@@ -16,6 +23,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
         
     var produto: Produtos = Produtos()
     var pedido: Pedidos = Pedidos()
+    var precoTotal: String?
     var tempProduto: Produtos?
     
     var listaProdutos: [Produtos] = [Produtos]()
@@ -24,7 +32,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
         super.viewDidLoad()
         
         tableViewCart.dataSource = self
-        //listaProdutos.append(tempProduto!)
+        listaProdutos.append(tempProduto!)
 
     }
 
@@ -62,7 +70,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
         return cell
     }
     
-
+   
 
     
     // MARK: - Navigation
@@ -72,15 +80,14 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.identifier == "PedidosFinalizar"{
-            if let pedidosController = segue.destinationViewController as? MeusPedidosViewController{
                 pedido.restaurante = self.produto.restaurante
                 pedido.produtos = NSSet(array: self.listaProdutos)
+                pedido.numPedido = random(min: 1, max: 1000)
+                pedido.precoTotal = self.precoTotal
                 
                 PedidosDAO.inserir(pedido)
                 
-                pedidosController.listaPedidos = PedidosDAO.buscarTodosPedidos()
-                
-            }
+            
         }
     }
     

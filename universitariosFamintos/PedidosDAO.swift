@@ -34,7 +34,7 @@ class PedidosDAO{
         
         var listaPedidos: [Pedidos] = [Pedidos]()
         let request: NSFetchRequest = NSFetchRequest(entityName: "Pedidos")
-        request.sortDescriptors = [NSSortDescriptor(key:"nome", ascending: true)]
+        request.sortDescriptors = [NSSortDescriptor(key:"restaurante.nome", ascending: true)]
         
         do{
             listaPedidos = try context.executeFetchRequest(request) as! [Pedidos]

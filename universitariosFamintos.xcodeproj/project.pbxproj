@@ -9,19 +9,18 @@
 /* Begin PBXBuildFile section */
 		3F0DA3CE1D22E5DD00CC3C5B /* CarrinhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DA3CC1D22E5DD00CC3C5B /* CarrinhoViewController.swift */; };
 		3F0DA3CF1D22E5DD00CC3C5B /* ItensCartViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0DA3CD1D22E5DD00CC3C5B /* ItensCartViewCell.swift */; };
-		3F37314F1D25923700CCDA48 /* Pedidos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3731471D25923700CCDA48 /* Pedidos+CoreDataProperties.swift */; };
-		3F3731501D25923700CCDA48 /* Pedidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3731481D25923700CCDA48 /* Pedidos.swift */; };
 		3F3731511D25923700CCDA48 /* Restaurantes+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3731491D25923700CCDA48 /* Restaurantes+CoreDataProperties.swift */; };
 		3F3731521D25923700CCDA48 /* Restaurantes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37314A1D25923700CCDA48 /* Restaurantes.swift */; };
 		3F3731531D25923700CCDA48 /* Usuarios+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37314B1D25923700CCDA48 /* Usuarios+CoreDataProperties.swift */; };
 		3F3731541D25923700CCDA48 /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37314C1D25923700CCDA48 /* Usuarios.swift */; };
 		3F3731551D25923700CCDA48 /* Produtos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37314D1D25923700CCDA48 /* Produtos+CoreDataProperties.swift */; };
 		3F3731561D25923700CCDA48 /* Produtos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F37314E1D25923700CCDA48 /* Produtos.swift */; };
+		3F3731591D25B68600CCDA48 /* Pedidos+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3731571D25B68600CCDA48 /* Pedidos+CoreDataProperties.swift */; };
+		3F37315A1D25B68600CCDA48 /* Pedidos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3731581D25B68600CCDA48 /* Pedidos.swift */; };
 		3F77AA951D23060800C3CA28 /* ProdutosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77AA941D23060800C3CA28 /* ProdutosDAO.swift */; };
 		3F77AA971D23070E00C3CA28 /* PedidosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77AA961D23070E00C3CA28 /* PedidosDAO.swift */; };
 		3F77AA991D23074400C3CA28 /* RestaurantesDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77AA981D23074400C3CA28 /* RestaurantesDAO.swift */; };
 		3F77AA9B1D2307F500C3CA28 /* UsuariosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77AA9A1D2307F500C3CA28 /* UsuariosDAO.swift */; };
-		3F77AA9D1D23084200C3CA28 /* ProdutosPedidosDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F77AA9C1D23084200C3CA28 /* ProdutosPedidosDAO.swift */; };
 		3F9890461D25956D007A9C2F /* facebook.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F9890451D25956D007A9C2F /* facebook.m */; };
 		3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA165B01D219E400016EC67 /* PratosCell.swift */; };
 		3FA165B41D219E780016EC67 /* PratosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FA165B31D219E780016EC67 /* PratosViewController.swift */; };
@@ -44,19 +43,18 @@
 /* Begin PBXFileReference section */
 		3F0DA3CC1D22E5DD00CC3C5B /* CarrinhoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarrinhoViewController.swift; sourceTree = "<group>"; };
 		3F0DA3CD1D22E5DD00CC3C5B /* ItensCartViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItensCartViewCell.swift; sourceTree = "<group>"; };
-		3F3731471D25923700CCDA48 /* Pedidos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Pedidos+CoreDataProperties.swift"; path = "../Pedidos+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		3F3731481D25923700CCDA48 /* Pedidos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pedidos.swift; path = ../Pedidos.swift; sourceTree = "<group>"; };
 		3F3731491D25923700CCDA48 /* Restaurantes+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Restaurantes+CoreDataProperties.swift"; path = "../Restaurantes+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F37314A1D25923700CCDA48 /* Restaurantes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Restaurantes.swift; path = ../Restaurantes.swift; sourceTree = "<group>"; };
 		3F37314B1D25923700CCDA48 /* Usuarios+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Usuarios+CoreDataProperties.swift"; path = "../Usuarios+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F37314C1D25923700CCDA48 /* Usuarios.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Usuarios.swift; path = ../Usuarios.swift; sourceTree = "<group>"; };
 		3F37314D1D25923700CCDA48 /* Produtos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Produtos+CoreDataProperties.swift"; path = "../Produtos+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		3F37314E1D25923700CCDA48 /* Produtos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Produtos.swift; path = ../Produtos.swift; sourceTree = "<group>"; };
+		3F3731571D25B68600CCDA48 /* Pedidos+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Pedidos+CoreDataProperties.swift"; path = "../Pedidos+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		3F3731581D25B68600CCDA48 /* Pedidos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Pedidos.swift; path = ../Pedidos.swift; sourceTree = "<group>"; };
 		3F77AA941D23060800C3CA28 /* ProdutosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdutosDAO.swift; sourceTree = "<group>"; };
 		3F77AA961D23070E00C3CA28 /* PedidosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PedidosDAO.swift; sourceTree = "<group>"; };
 		3F77AA981D23074400C3CA28 /* RestaurantesDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantesDAO.swift; sourceTree = "<group>"; };
 		3F77AA9A1D2307F500C3CA28 /* UsuariosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsuariosDAO.swift; sourceTree = "<group>"; };
-		3F77AA9C1D23084200C3CA28 /* ProdutosPedidosDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProdutosPedidosDAO.swift; sourceTree = "<group>"; };
 		3F9890441D25956C007A9C2F /* universitariosFamintos-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "universitariosFamintos-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		3F9890451D25956D007A9C2F /* facebook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = facebook.m; sourceTree = "<group>"; };
 		3FA165B01D219E400016EC67 /* PratosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PratosCell.swift; sourceTree = "<group>"; };
@@ -95,8 +93,8 @@
 		3F0DA3D01D22F3E600CC3C5B /* VO */ = {
 			isa = PBXGroup;
 			children = (
-				3F3731471D25923700CCDA48 /* Pedidos+CoreDataProperties.swift */,
-				3F3731481D25923700CCDA48 /* Pedidos.swift */,
+				3F3731571D25B68600CCDA48 /* Pedidos+CoreDataProperties.swift */,
+				3F3731581D25B68600CCDA48 /* Pedidos.swift */,
 				3F3731491D25923700CCDA48 /* Restaurantes+CoreDataProperties.swift */,
 				3F37314A1D25923700CCDA48 /* Restaurantes.swift */,
 				3F37314B1D25923700CCDA48 /* Usuarios+CoreDataProperties.swift */,
@@ -276,14 +274,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3FA165B41D219E780016EC67 /* PratosViewController.swift in Sources */,
-				3F3731501D25923700CCDA48 /* Pedidos.swift in Sources */,
 				3F3731521D25923700CCDA48 /* Restaurantes.swift in Sources */,
 				3F0DA3CF1D22E5DD00CC3C5B /* ItensCartViewCell.swift in Sources */,
 				3F77AA971D23070E00C3CA28 /* PedidosDAO.swift in Sources */,
 				3F3731561D25923700CCDA48 /* Produtos.swift in Sources */,
 				3F3731511D25923700CCDA48 /* Restaurantes+CoreDataProperties.swift in Sources */,
+				3F3731591D25B68600CCDA48 /* Pedidos+CoreDataProperties.swift in Sources */,
 				3FBB47C31D230DEE005312BA /* MeusPedidosCell.swift in Sources */,
-				3F37314F1D25923700CCDA48 /* Pedidos+CoreDataProperties.swift in Sources */,
 				DA399FC41D243CB600088981 /* RestaurantesTableViewCell.swift in Sources */,
 				3FA165B11D219E400016EC67 /* PratosCell.swift in Sources */,
 				3F77AA991D23074400C3CA28 /* RestaurantesDAO.swift in Sources */,
@@ -298,6 +295,7 @@
 				3F77AA9B1D2307F500C3CA28 /* UsuariosDAO.swift in Sources */,
 				3F9890461D25956D007A9C2F /* facebook.m in Sources */,
 				3F0DA3CE1D22E5DD00CC3C5B /* CarrinhoViewController.swift in Sources */,
+				3F37315A1D25B68600CCDA48 /* Pedidos.swift in Sources */,
 				3FF9BD0C1D22F2F600784E41 /* InformacaoPratosViewController.swift in Sources */,
 				3FBB47C71D230F02005312BA /* MeusPedidosViewController.swift in Sources */,
 				3FB36E551D1DCAB200119DDA /* AppDelegate.swift in Sources */,
