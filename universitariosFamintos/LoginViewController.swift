@@ -8,7 +8,11 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
+
+    @IBOutlet weak var senha: UITextField!
+    
+    @IBOutlet weak var email: UITextField!
 
     @IBOutlet weak var stackViewLogin: UIStackView!
     
@@ -17,6 +21,16 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     
     @IBOutlet weak var signupButton: UIButton!
+    
+    @IBAction func Login(sender: AnyObject) {
+        if ((senha.text != "") && email.text != ""){
+            let alert = UIAlertController(title:"Login realizado com sucesso!", message:"logado como: \(email.text)", preferredStyle:UIAlertControllerStyle.Alert)
+        
+            alert.addAction(UIAlertAction(title:"Descartar",style: UIAlertActionStyle.Default, handler:nil))
+        
+            self.presentViewController(alert, animated:true, completion:nil)
+        }
+    }
     
     let facebookButton: FBSDKLoginButton = {
         let button = FBSDKLoginButton()
@@ -31,7 +45,42 @@ class LoginViewController: UIViewController {
         facebookButton.frame.origin.x = 20
         facebookButton.frame.origin.y = 170
         facebookButton.frame.size.width = 375
+        facebookButton.delegate = self
         // Do any additional setup after loading the view.
+    }
+    
+    func fetchProfile() {
+        let parameters = ["fields": "first_name, last_name"]
+        var nome = ""
+        FBSDKGraphRequest(graphPath: "me", parameters: parameters).startWithCompletionHandler({ (connection, user, requestError) -> Void in
+            
+            if requestError != nil {
+                print(requestError)
+                return
+            }
+            
+            let firstName = user["first_name"] as? String
+            let lastName = user["last_name"] as? String
+            
+            nome = "\(firstName!) \(lastName!)"
+            
+            let alert = UIAlertController(title:"Login realizado com sucesso!", message:"logado como: \(nome)", preferredStyle:UIAlertControllerStyle.Alert)
+            
+            alert.addAction(UIAlertAction(title:"Descartar",style: UIAlertActionStyle.Default, handler:nil))
+            
+            self.presentViewController(alert, animated:true, completion:nil)
+        })
+    }
+    
+    func loginButton(loginButton: FBSDKLoginButton!, didCompleteWithResult result: FBSDKLoginManagerLoginResult!, error: NSError!) {
+        fetchProfile()
+    }
+    
+    func loginButtonDidLogOut(loginButton: FBSDKLoginButton!) {
+    }
+    
+    func loginButtonWillLogin(loginButton: FBSDKLoginButton!) -> Bool {
+        return true
     }
 
     override func didReceiveMemoryWarning() {
