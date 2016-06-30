@@ -69,9 +69,9 @@ class MeusPedidosViewController: UITableViewController {
         let pedido = self.listaPedidos[indexPath.row]
         
         cell.estabelecimento.text = pedido.restaurante?.nome
-        cell.nOrder.text = String(pedido.objectID)
-        cell.product.text = pedido.produtos.
-        cell.price.text = pedido.
+        cell.nOrder.text = String(pedido.numPedido)
+        cell.product.text = String(pedido.produtos?.count)
+        cell.price.text = pedido.precoTotal
         //cell.imageOrder.image = UIImage(named: pedido.img)
 
         // Configure the cell...

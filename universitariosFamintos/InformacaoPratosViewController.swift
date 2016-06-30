@@ -84,6 +84,7 @@ class InformacaoPratosViewController: UIViewController {
         if let addCarrinho = segue.destinationViewController as? CarrinhoViewController{
      
             addCarrinho.tempProduto = self.produto!
+            addCarrinho.precoTotal = self.precoTotalMeusPratos.text!
      
      
         }
