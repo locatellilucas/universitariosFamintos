@@ -38,16 +38,28 @@
                                                                         <barButtonItem key="backBarButtonItem" title="Voltar" id="O3N-Vb-RQT"/>
                                                                     </navigationItem>
                                                                 </items>
+                                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="360" height="0.0"/>
+                                                                </variation>
                                                             </navigationBar>
                                                         </subviews>
+                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="360" height="0.0"/>
+                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m3E-yM-CXa" userLabel="Imagem geral">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="234"/>
                                                         <subviews>
-                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default" translatesAutoresizingMaskIntoConstraints="NO" id="UU2-ah-GpS">
+                                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pizza-atum" translatesAutoresizingMaskIntoConstraints="NO" id="UU2-ah-GpS">
                                                                 <rect key="frame" x="0.0" y="0.0" width="374" height="234"/>
+                                                                <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="360" height="156"/>
+                                                                </variation>
                                                             </imageView>
                                                         </subviews>
+                                                        <variation key="widthClass=compact" ambiguous="YES" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="360" height="156"/>
+                                                        </variation>
                                                     </stackView>
                                                 </subviews>
                                             </stackView>
@@ -127,6 +139,9 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="184" y="0.0" width="176" height="21"/>
+                                                        </variation>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OnU-BN-UYb" userLabel="Quantidade + stapper">
                                                         <rect key="frame" x="164" y="36" width="203" height="29"/>
@@ -183,8 +198,14 @@
                                                                 </subviews>
                                                             </stackView>
                                                         </subviews>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="185" y="80" width="176" height="21"/>
+                                                        </variation>
                                                     </stackView>
                                                 </subviews>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="0.0" width="360" height="100"/>
+                                                </variation>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Csz-AD-s3P" userLabel="Adicionar ao carrinho">
                                                 <rect key="frame" x="0.0" y="120" width="374" height="194"/>
@@ -192,15 +213,24 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiT-mD-gau">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="194"/>
                                                         <state key="normal" title="Adicionar ao carrinho"/>
+                                                        <variation key="widthClass=compact" misplaced="YES">
+                                                            <rect key="frame" x="0.0" y="0.0" width="360" height="116"/>
+                                                        </variation>
                                                         <connections>
                                                             <segue destination="T4Y-tz-LTt" kind="show" identifier="SegueADDCarrinho" id="rwz-mD-Fw4"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="0.0" y="120" width="360" height="116"/>
+                                                </variation>
                                             </stackView>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="29" width="360" height="472"/>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,7 +247,7 @@
                             </constraint>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Descricao Prato" id="9Zu-HY-zg4"/>
+                    <navigationItem key="navigationItem" title="Descrição do prato" id="9Zu-HY-zg4"/>
                     <connections>
                         <outlet property="descricaoPratoMeusPratos" destination="zhB-6C-aSK" id="0YX-y4-sV9"/>
                         <outlet property="imagemPratoMeusPratos" destination="UU2-ah-GpS" id="fGF-rL-GhN"/>
@@ -369,14 +399,8 @@
                                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                                     <nil key="highlightedColor"/>
-                                                                                    <variation key="widthClass=compact" misplaced="YES">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="172" height="21"/>
-                                                                                    </variation>
                                                                                 </label>
                                                                             </subviews>
-                                                                            <variation key="widthClass=compact" misplaced="YES">
-                                                                                <rect key="frame" x="0.0" y="21" width="172" height="21"/>
-                                                                            </variation>
                                                                         </stackView>
                                                                     </subviews>
                                                                     <constraints>
@@ -809,7 +833,7 @@
             </objects>
             <point key="canvasLocation" x="1840" y="-154"/>
         </scene>
-        <!--Cardapio-->
+        <!--Cardápio-->
         <scene sceneID="HEh-pt-PUg">
             <objects>
                 <viewController id="oB3-Bg-ITa" customClass="PratosViewController" customModule="universitariosFamintos" customModuleProvider="target" sceneMemberID="viewController">
@@ -833,13 +857,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="BcH-vF-gQR">
-                                                    <rect key="frame" x="-12" y="-12" width="316" height="64"/>
+                                                    <rect key="frame" x="-12" y="-12" width="316" height="66"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="uo7-PL-h3H">
-                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="64"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="158" height="66"/>
                                                             <subviews>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="f2b-b8-0wD" userLabel="imgPrato">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="64"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="79" height="66"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="50" id="SeM-lH-OQh"/>
                                                                         <constraint firstAttribute="width" constant="50" id="b3w-X0-sRh"/>
@@ -859,7 +883,7 @@
                                                                     </variation>
                                                                 </imageView>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hbj-Bx-JgQ" userLabel="plateName">
-                                                                    <rect key="frame" x="79" y="0.0" width="79" height="64"/>
+                                                                    <rect key="frame" x="79" y="0.0" width="79" height="66"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <nil key="highlightedColor"/>
@@ -873,7 +897,7 @@
                                                             </variation>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillEqually" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="yHJ-fr-yoM">
-                                                            <rect key="frame" x="158" y="22" width="158" height="21"/>
+                                                            <rect key="frame" x="158" y="23" width="158" height="21"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="b0U-cX-NyK">
                                                                     <rect key="frame" x="0.0" y="0.0" width="71" height="21"/>
@@ -979,11 +1003,15 @@
                                             </mask>
                                         </variation>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Pizza hut e uma pizzaria que..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bch-pA-E4x" userLabel="description">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bch-pA-E4x" userLabel="description">
                                         <rect key="frame" x="280" y="990" width="280" height="21"/>
+                                        <string key="text">A Pizza Hut está presente nos 5 continentes em mais de 90 países. A rede conta com mais de 14.000 restaurantes ao redor do mundo e emprega mais de 250.000 funcionários apenas nos Estados Unidos. Por dia, 11,5 milhões de pizzas são vendidas para mais de 4 milhões de consumidores da Pizza Hut no mundo. No Brasil, são mais de 90 restaurantes distribuídos pelos estados, atingindo o número de 1 milhão de pessoas consumindo Pizza Hut por mês.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="180" y="0.0" width="180" height="100"/>
+                                        </variation>
                                     </label>
                                 </subviews>
                                 <constraints>
@@ -1050,7 +1078,7 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Minha Tela" id="b1u-cx-crw" userLabel="Detalhes Restaurantes"/>
-                    <navigationItem key="navigationItem" title="Cardapio" id="DGb-nE-y3a"/>
+                    <navigationItem key="navigationItem" title="Cardápio" id="DGb-nE-y3a"/>
                     <connections>
                         <outlet property="tableviewPrato" destination="yqc-wD-yYg" id="Ztm-Eq-SYd"/>
                     </connections>
@@ -1178,6 +1206,7 @@
         <image name="2000px-Pizza_Hut_logo" width="2000" height="2000"/>
         <image name="default" width="640" height="480"/>
         <image name="more" width="24" height="24"/>
+        <image name="pizza-atum" width="710" height="473"/>
         <image name="purchase_order" width="24" height="24"/>
         <image name="restaurant" width="24" height="24"/>
     </resources>
