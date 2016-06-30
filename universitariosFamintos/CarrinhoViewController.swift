@@ -60,7 +60,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
     
 
 
-    
+    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -74,7 +74,7 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
                 
             }
         }
-    }
+    }*/
     
 
 }
