@@ -16,12 +16,15 @@ class CarrinhoViewController: UIViewController, UITableViewDataSource {
         
     var produto: Produtos = Produtos()
     var pedido: Pedidos = Pedidos()
+    var tempProduto: Produtos?
+    
     var listaProdutos: [Produtos] = [Produtos]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         tableViewCart.dataSource = self
+        //listaProdutos.append(tempProduto!)
 
     }
 

@@ -37,31 +37,31 @@ class RestaurantesTableViewController: UITableViewController {
          
          let produto: Produtos = Produtos()
          produto.nome = "Pizza Frango com catupiry"
-         produto.preco = "R$5,00"
+         produto.preco = "5.00"
          produto.descricao = "Frango desfiado, queijo do tipo catupiry e queijo mussarela"
          produto.imagem = "nada"
          produto.restaurante = rest1
          
          let produto2: Produtos = Produtos()
          produto2.nome = "Pizza Calabresa"
-         produto2.preco = "R$5,00"
+         produto2.preco = "5.00"
          produto2.descricao = "Calabresa fatiada e frita, queijo mussarela e azeitona"
          produto2.imagem = "nada"
-         produto.restaurante = rest1
+         produto2.restaurante = rest1
          
          let produto3: Produtos = Produtos()
          produto3.nome = "Pizza Portuguesa"
-         produto3.preco = "R$5,00"
+         produto3.preco = "5.00"
          produto3.descricao = "Presunto, queijo mussarela, ovo e oregano"
          produto3.imagem = "nada"
-         produto.restaurante = rest1
+         produto3.restaurante = rest1
          
          let produto4: Produtos = Produtos()
          produto4.nome = "Pizza Atum"
-         produto4.preco = "R$5,00"
+         produto4.preco = "5.00"
          produto4.descricao = "Atum, queijo mussarela e azeitona preta"
          produto4.imagem = "nada"
-         produto.restaurante = rest1
+         produto4.restaurante = rest1
          
         RestaurantesDAO.inserir(rest1)
         RestaurantesDAO.inserir(rest2)
