@@ -18,11 +18,19 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var signupButton: UIButton!
     
-    @IBOutlet weak var facebookButton: UIButton!
+    let facebookButton: FBSDKLoginButton = {
+        let button = FBSDKLoginButton()
+        button.readPermissions = ["email"]
+        return button
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        view.addSubview(facebookButton)
+        facebookButton.frame.origin.x = 20
+        facebookButton.frame.origin.y = 170
+        facebookButton.frame.size.width = 375
         // Do any additional setup after loading the view.
     }
 

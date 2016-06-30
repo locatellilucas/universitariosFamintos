@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ulr-0I-LCw">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="5uf-Jz-BK1">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -218,7 +218,6 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Descricao Prato" id="9Zu-HY-zg4"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="descricaoPratoMeusPratos" destination="zhB-6C-aSK" id="0YX-y4-sV9"/>
                         <outlet property="imagemPratoMeusPratos" destination="UU2-ah-GpS" id="fGF-rL-GhN"/>
@@ -1094,19 +1093,11 @@
                                             </button>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ym-yS-pwM">
-                                        <rect key="frame" x="0.0" y="120" width="187" height="34"/>
-                                        <state key="normal" title="Entrar com o Facebook">
-                                            <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="0Ym-yS-pwM" firstAttribute="leading" secondItem="Q1G-G8-XET" secondAttribute="leading" id="dou-8c-eie"/>
                                     <constraint firstAttribute="trailing" secondItem="BQe-pZ-XjF" secondAttribute="trailing" id="iXR-5W-t8I"/>
                                     <constraint firstAttribute="trailing" secondItem="uxE-q6-5yo" secondAttribute="trailing" id="ks8-ez-dmD"/>
                                     <constraint firstItem="uxE-q6-5yo" firstAttribute="leading" secondItem="Q1G-G8-XET" secondAttribute="leading" id="nxF-Js-8EQ"/>
-                                    <constraint firstAttribute="trailing" secondItem="0Ym-yS-pwM" secondAttribute="trailing" id="yGd-5K-ye3"/>
                                     <constraint firstItem="BQe-pZ-XjF" firstAttribute="leading" secondItem="Q1G-G8-XET" secondAttribute="leading" id="zO5-Jn-r8l"/>
                                     <constraint firstItem="uxE-q6-5yo" firstAttribute="centerX" secondItem="Q1G-G8-XET" secondAttribute="centerX" id="zzr-wv-xgr"/>
                                 </constraints>
@@ -1117,19 +1108,16 @@
                                         <exclude reference="zzr-wv-xgr"/>
                                         <exclude reference="iXR-5W-t8I"/>
                                         <exclude reference="zO5-Jn-r8l"/>
-                                        <exclude reference="dou-8c-eie"/>
-                                        <exclude reference="yGd-5K-ye3"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=compact">
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="20" y="50" width="360" height="110"/>
                                     <mask key="constraints">
                                         <include reference="ks8-ez-dmD"/>
                                         <include reference="nxF-Js-8EQ"/>
                                         <include reference="zzr-wv-xgr"/>
                                         <include reference="iXR-5W-t8I"/>
                                         <include reference="zO5-Jn-r8l"/>
-                                        <include reference="dou-8c-eie"/>
-                                        <include reference="yGd-5K-ye3"/>
                                     </mask>
                                 </variation>
                             </stackView>
@@ -1140,54 +1128,18 @@
                                     <rect key="frame" x="84" y="501" width="232" height="30"/>
                                 </variation>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="05V-z0-mSC">
-                                <rect key="frame" x="0.0" y="213" width="287" height="128"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="ico-facebook" translatesAutoresizingMaskIntoConstraints="NO" id="SXH-ep-Ozk">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="bS9-Y2-Jml"/>
-                                            <constraint firstAttribute="width" constant="40" id="utt-qX-jze"/>
-                                        </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="bS9-Y2-Jml"/>
-                                                <exclude reference="utt-qX-jze"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="bS9-Y2-Jml"/>
-                                                <include reference="utt-qX-jze"/>
-                                            </mask>
-                                        </variation>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aGz-58-Vt9">
-                                        <rect key="frame" x="128" y="0.0" width="159" height="128"/>
-                                        <state key="normal" title="Entrar com o Facebook">
-                                            <color key="titleColor" red="0.094157796092603191" green="0.28547714405375724" blue="0.63657852564102568" alpha="1" colorSpace="calibratedRGB"/>
-                                        </state>
-                                    </button>
-                                </subviews>
-                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Q1G-G8-XET" secondAttribute="trailing" id="5tb-Ay-xha"/>
-                            <constraint firstItem="05V-z0-mSC" firstAttribute="leading" secondItem="Ky4-2W-o8u" secondAttribute="leadingMargin" id="6uf-Py-49q"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="05V-z0-mSC" secondAttribute="trailing" id="D4y-zW-fZz"/>
                             <constraint firstItem="Q1G-G8-XET" firstAttribute="leading" secondItem="Ky4-2W-o8u" secondAttribute="leadingMargin" id="Hko-8k-n3r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="V86-Uu-it1" secondAttribute="trailing" constant="50" id="TCf-fZ-Vj1"/>
                             <constraint firstItem="V86-Uu-it1" firstAttribute="leading" secondItem="Ky4-2W-o8u" secondAttribute="leadingMargin" constant="50" id="Urp-Xv-z1M"/>
                             <constraint firstItem="y1W-nu-JK4" firstAttribute="top" secondItem="V86-Uu-it1" secondAttribute="bottom" constant="30" id="Y6f-o2-ley"/>
                             <constraint firstItem="Q1G-G8-XET" firstAttribute="top" secondItem="FlS-NK-QFH" secondAttribute="bottom" constant="30" id="bMr-dL-SJE"/>
-                            <constraint firstItem="05V-z0-mSC" firstAttribute="top" secondItem="Q1G-G8-XET" secondAttribute="bottom" constant="29" id="dcz-iL-dhh"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="6uf-Py-49q"/>
-                                <exclude reference="D4y-zW-fZz"/>
-                                <exclude reference="dcz-iL-dhh"/>
                                 <exclude reference="TCf-fZ-Vj1"/>
                                 <exclude reference="Urp-Xv-z1M"/>
                                 <exclude reference="Y6f-o2-ley"/>
@@ -1195,9 +1147,6 @@
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="constraints">
-                                <include reference="6uf-Py-49q"/>
-                                <include reference="D4y-zW-fZz"/>
-                                <include reference="dcz-iL-dhh"/>
                                 <include reference="TCf-fZ-Vj1"/>
                                 <include reference="Urp-Xv-z1M"/>
                                 <include reference="Y6f-o2-ley"/>
@@ -1206,7 +1155,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Mais" image="more" id="QxU-Qf-16M"/>
                     <connections>
-                        <outlet property="facebookButton" destination="0Ym-yS-pwM" id="hpG-Bg-K3a"/>
                         <outlet property="loginButton" destination="fML-5G-bnd" id="6Hy-Sy-AuB"/>
                         <outlet property="signupButton" destination="MBy-Ex-iLc" id="B1n-FQ-zPy"/>
                         <outlet property="stackViewLogin" destination="uxE-q6-5yo" id="m13-x1-TF0"/>
@@ -1221,7 +1169,6 @@
     <resources>
         <image name="2000px-Pizza_Hut_logo" width="2000" height="2000"/>
         <image name="default" width="640" height="480"/>
-        <image name="ico-facebook" width="128" height="128"/>
         <image name="more" width="24" height="24"/>
         <image name="purchase_order" width="24" height="24"/>
         <image name="restaurant" width="24" height="24"/>
